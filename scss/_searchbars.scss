@@ -24,10 +24,29 @@ div#searchbars
     border-top-right-radius: 4pt;
     margin: 0;
     
+    background: $color-searchbar-background;
+    color: $color-searchbar-text;
+    
     cursor: text;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    
+    border:
+    {
+      top: 1px dotted $color-searchbar-border;
+      bottom: 1px dotted $color-searchbar-border;
+      left: 1px dotted $color-searchbar-border;
+      right: 1px dotted $color-searchbar-border;
+    }
+    
+    padding:
+    {
+      top: 4pt;
+      bottom: 4pt;
+      left: 6pt;
+      right: 6pt;
+    }
     
     font:
     {
@@ -36,20 +55,12 @@ div#searchbars
       size: 12pt;
     }
     
-    border:
+    &:focus,
+    &:hover,
+    &:active
     {
-      top: 1px dotted black;
-      bottom: 1px dotted black;
-      left: 1px dotted black;
-      right: 1px dotted black;
-    }
-    
-    padding:
-    {
-      top: 4pt;
-      bottom: 4pt;
-      left: 8pt;
-      right: 8pt;
+      background: $color-searchbar-background-focus;
+      outline: 0;
     }
   }
   
@@ -60,24 +71,20 @@ div#searchbars
     width: 25%;
     margin: 0;
     
+    background: $color-searchbar-background;
+    color: $color-searchbar-text;
+    
     cursor: pointer;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     
-    font:
-    {
-      family: $font-chain-searchbars;
-      weight: 400;
-      size: 12pt;
-    }
-    
     border:
     {
       top: 0;
-      bottom: 1px dotted black;
-      left: 1px dotted black;
-      right: 1px dotted black;
+      bottom: 1px dotted $color-searchbar-border;
+      left: 1px dotted $color-searchbar-border;
+      right: 1px dotted $color-searchbar-border;
     }
     
     padding:
@@ -88,8 +95,23 @@ div#searchbars
       right: 2pt;
     }
     
+    font:
+    {
+      family: $font-chain-searchbars;
+      weight: 400;
+      size: 12pt;
+    }
+    
     &:first-of-type { border-bottom-left-radius: 4pt; }
     &:last-of-type { border-bottom-right-radius: 4pt; }
     &:not(:first-of-type) { border-left: 0; }
+    
+    &:focus,
+    &:hover,
+    &:active
+    {
+      background: $color-searchbar-background-focus;
+      outline: 0;
+    }
   }
 }
