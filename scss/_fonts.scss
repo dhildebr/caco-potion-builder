@@ -1,0 +1,12 @@
+@font-face
+{
+  font-display: swap;
+  font-family: "Arbutus Slab";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/ArbutusSlab_400.woff2") format("woff2"),
+       url("../assets/fonts/ArbutusSlab_400.woff") format("woff"),
+       url("../assets/fonts/ArbutusSlab_400.ttf") format("truetype");
+}
+
+$font-chain-searchbars: "Arbutus Slab", serif;

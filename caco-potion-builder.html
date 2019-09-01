@@ -44,18 +44,52 @@
       
       <section>
         
-        <input type="search"
-               name="ingredient-search-field" id="ingredient-search-field"
-               placeholder="Search for ingredients by name..."
-               autofocus>
-        </input>
-        <button type="button"
-                name="ingredient-search-submit"
-                id="ingredient-search-submit">
-        </button>
+        <div id="searchbars">
+          <label for="ingredient-search-field">
+            Search for ingredients by name
+          </label>
+          <input type="search"
+                 name="ingredient-search-field" id="ingredient-search-field"
+                 placeholder="Search for ingredients by name..."
+                 list="ingredient-search-suggestions"
+                 autofocus>
+          </input>
+          <datalist id="ingredient-search-suggestions">
+          </datalist>
+          
+          <label for="ingredient-effects-dropdown-01">Choose the first ingredient effect by which to filter</label>
+          <label for="ingredient-effects-dropdown-02">Choose the second ingredient effect by which to filter</label>
+          <label for="ingredient-effects-dropdown-03">Choose the third ingredient effect by which to filter</label>
+          <label for="ingredient-effects-dropdown-04">Choose the fourth ingredient effect by which to filter</label>
+          <select name="ingredient-effects-dropdown-01" id="ingredient-effects-dropdown-01">
+            <option value="Foo bar baz qux.">Foo bar baz qux</option>
+          </select>
+          <select name="ingredient-effects-dropdown-02" id="ingredient-effects-dropdown-02">
+            <option value="Foo bar baz qux.">Foo bar baz qux</option>
+          </select>
+          <select name="ingredient-effects-dropdown-03" id="ingredient-effects-dropdown-03">
+            <option value="Foo bar baz qux.">Foo bar baz qux</option>
+          </select>
+          <select name="ingredient-effects-dropdown-04" id="ingredient-effects-dropdown-04">
+            <option value="Foo bar baz qux.">Foo bar baz qux</option>
+          </select>
+          
+          <!--button type="button"
+                  name="ingredient-search-submit"
+                  id="ingredient-search-submit">
+          </button-->
+        </div>
         
         <div id="ingredient-search-results">
-          
+          <div class="ingredient-search-result">
+            <div class="result-name">
+              No results found &#x1F641;
+            </div>
+            <div class="result-effect">&mdash;</div>
+            <div class="result-effect">&mdash;</div>
+            <div class="result-effect">&mdash;</div>
+            <div class="result-effect">&mdash;</div>
+          </div>
         </div>
         
       </section>
