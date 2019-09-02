@@ -1,0 +1,3997 @@
+{
+  "ussep_version": "4.1.6",
+  "caco_version": "2.0.6",
+  "bs_cyrodiil_version": "1.3.3",
+  "hunterborn_version": "1.6.2",
+  
+  "effects": [
+    "Health", "Stamina", "Magicka",
+    "Health Fortification", "Stamina Fortification", "Magicka Fortification",
+    "Health Regeneration", "Stamina Regeneration", "Magicka Regeneration",
+    "Damage Health", "Damage Health Regen", "Lingering Damage Health", "Ravage Health",
+    "Damage Stamina", "Damage Stamina Regen", "Fatigue",
+    "Damage Magicka", "Damage Magicka Regen", "Silence",
+    "Damage Undead", "Lingering Damage Undead",
+    
+    "Fortify One-Handed", "Fortify Two-Handed", "Fortify Marksman", "Fortify Block", "Fortify Heavy Armor",
+    "Fortify Sneak", "Fortify Lockpicking", "Fortify Pickpocket", "Fortify Speech", "Fortify Light Armor",
+    "Fortify Destruction", "Fortify Alteration", "Fortify Restoration", "Fortify Conjuration", "Fortify Illusion",
+    "Fortify Smithing", "Fortify Enchanting", "Fortify Unarmed", "Fortify Barter",
+    "Drain Strength", "Drain Intelligence",
+    
+    "Resist Magic", "Resist Fire", "Resist Frost", "Resist Shock", "Shield",
+    "Magic Aversion", "Fire Aversion", "Frost Aversion", "Shock Aversion",
+    "Fire Damage", "Frost Damage", "Shock Damage",
+    
+    "Cure Disease", "Resist Disease",
+    "Cure Poison", "Resist Poison", "Poison Aversion",
+    "Paralysis", "Resist Paralysis", "Cure Paralysis",
+    "Speed", "Slow", "Feather",
+    
+    "Invisibility", "Light",
+    "Detect Life", "Detect Life Potion - Exterior",
+    "Blood", "Protect Soul"
+  ],
+  
+  "ingredients": [
+    {
+      "name": "Thistle Branch",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fatigue", "magnitude": 266.0},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.16},
+        {"name": "Resist Poison", "magnitude": 1.32},
+        {"name": "Resist Frost", "magnitude": 0.55}
+      ]
+    },
+    {
+      "name": "Snowberries",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Enchanting", "magnitude": 1.12},
+        {"name": "Resist Fire", "magnitude": 0.55},
+        {"name": "Resist Frost", "magnitude": 0.55},
+        {"name": "Resist Shock", "magnitude": 0.55}
+      ]
+    },
+    {
+      "name": "Jarrin Root",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 208.5},
+        {"name": "Damage Stamina", "magnitude": 27.75},
+        {"name": "Damage Magicka", "magnitude": 27.75},
+        {"name": "Drain Strength", "magnitude": 4.13}
+      ]
+    },
+    {
+      "name": "Pine Thrush Egg",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Lockpicking", "magnitude": 2.8},
+        {"name": "Resist Shock", "magnitude": 1.54},
+        {"name": "Poison Aversion", "magnitude": 2.01},
+        {"name": "Stamina", "magnitude": 5.55}
+      ]
+    },
+    {
+      "name": "Chicken Egg",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Alteration", "magnitude": 2.91},
+        {"name": "Resist Paralysis", "magnitude": 166.0},
+        {"name": "Resist Poison", "magnitude": 0.99},
+        {"name": "Damage Magicka Regen", "magnitude": 1.01}
+      ]
+    },
+    {
+      "name": "Nightshade",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Destruction", "magnitude": 2.8},
+        {"name": "Damage Undead", "magnitude": 6.26},
+        {"name": "Damage Magicka Regen", "magnitude": 2.35},
+        {"name": "Damage Health", "magnitude": 3.48}
+      ]
+    },
+    {
+      "name": "Bone Meal",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 12.21},
+        {"name": "Fortify Conjuration", "magnitude": 4.15},
+        {"name": "Resist Fire", "magnitude": 1.98},
+        {"name": "Night Eye", "magnitude": 399.0}
+      ]
+    },
+    {
+      "name": "Salt Pile",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.27},
+        {"name": "Stamina Regeneration", "magnitude": 2.77},
+        {"name": "Magic Aversion", "magnitude": 1.66},
+        {"name": "Damage Stamina Regen", "magnitude": 1.01}
+      ]
+    },
+    {
+      "name": "Garlic",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 1332.0},
+        {"name": "Stamina Regeneration", "magnitude": 4.15},
+        {"name": "Health Regeneration", "magnitude": 2.77},
+        {"name": "Magicka Regeneration", "magnitude": 2.77}
+      ]
+    },
+    {
+      "name": "Elves Ear",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Magicka", "magnitude": 3.7},
+        {"name": "Health", "magnitude": 2.77},
+        {"name": "Frost Aversion", "magnitude": 2.23},
+        {"name": "Resist Fire", "magnitude": 0.55}
+      ]
+    },
+    {
+      "name": "Frost Mirriam",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Frost", "magnitude": 1.21},
+        {"name": "Stamina Fortification", "magnitude": 2.22},
+        {"name": "Magicka Fortification", "magnitude": 2.22},
+        {"name": "Fire Aversion", "magnitude": 2.23}
+      ]
+    },
+    {
+      "name": "Chaurus Eggs",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 3.85},
+        {"name": "Night Eye", "magnitude": 665.0},
+        {"name": "Invisibility", "magnitude": 281.0},
+        {"name": "Damage Magicka", "magnitude": 7.22}
+      ]
+    },
+    {
+      "name": "Daedra Heart",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health", "magnitude": 13.88},
+        {"name": "Fear", "magnitude": 3.92},
+        {"name": "Silence", "magnitude": 106.0},
+        {"name": "Damage Magicka", "magnitude": 22.2}
+      ]
+    },
+    {
+      "name": "Falmer Ear",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Lockpicking", "magnitude": 4.2},
+        {"name": "Frenzy", "magnitude": 3.64},
+        {"name": "Resist Poison", "magnitude": 3.64},
+        {"name": "Damage Health", "magnitude": 6.95}
+      ]
+    },
+    {
+      "name": "Fire Salts",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fire Aversion", "magnitude": 6.68},
+        {"name": "Resist Frost", "magnitude": 2.75},
+        {"name": "Magicka Regeneration", "magnitude": 5.53},
+        {"name": "Magicka", "magnitude": 10.64}
+      ]
+    },
+    {
+      "name": "Frost Salts",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 6.68},
+        {"name": "Resist Fire", "magnitude": 2.75},
+        {"name": "Damage Health", "magnitude": 9.73},
+        {"name": "Magicka", "magnitude": 10.64}
+      ]
+    },
+    {
+      "name": "Void Salts",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Shock Aversion", "magnitude": 6.68},
+        {"name": "Resist Shock", "magnitude": 2.75},
+        {"name": "Silence", "magnitude": 94.0},
+        {"name": "Magicka", "magnitude": 10.64}
+      ]
+    },
+    {
+      "name": "Briar Heart",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health Fortification", "magnitude": 7.77},
+        {"name": "Fortify Destruction", "magnitude": 3.64},
+        {"name": "Magicka Fortification", "magnitude": 6.66},
+        {"name": "Paralysis", "magnitude": 61.0}
+      ]
+    },
+    {
+      "name": "Ectoplasm",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Etherialize", "magnitude": 80.0},
+        {"name": "Fortify Illusion", "magnitude": 5.81},
+        {"name": "Magicka Fortification", "magnitude": 7.22},
+        {"name": "Damage Health", "magnitude": 4.87}
+      ]
+    },
+    {
+      "name": "Giant's Toe",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 5.03},
+        {"name": "Feather", "magnitude": 4.63},
+        {"name": "Health Fortification", "magnitude": 7.22},
+        {"name": "Drain Strength", "magnitude": 3.44}
+      ]
+    },
+    {
+      "name": "Hagraven Feathers",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Shock Aversion", "magnitude": 5.12},
+        {"name": "Damage Magicka", "magnitude": 12.21},
+        {"name": "Fortify Conjuration", "magnitude": 4.56},
+        {"name": "Frenzy", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Ice Wraith Teeth",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 1.0},
+        {"name": "Magicka Regeneration", "magnitude": 1.0},
+        {"name": "Etherialize", "magnitude": 1.0},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Skeever Tail",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 4.02},
+        {"name": "Fortify Sneak", "magnitude": 0.99},
+        {"name": "Ravage Health", "magnitude": 3.48},
+        {"name": "Damage Health", "magnitude": 2.09}
+      ]
+    },
+    {
+      "name": "Slaughterfish Scales",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Block", "magnitude": 1.4},
+        {"name": "Lingering Damage Health", "magnitude": 0.36},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.09},
+        {"name": "Waterwalking", "magnitude": 266.0}
+      ]
+    },
+    {
+      "name": "Taproot",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Illusion", "magnitude": 6.23},
+        {"name": "Magicka", "magnitude": 12.03},
+        {"name": "Magicka Regeneration", "magnitude": 9.68},
+        {"name": "Magic Aversion", "magnitude": 4.98}
+      ]
+    },
+    {
+      "name": "Troll Fat",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 3080.0},
+        {"name": "Frenzy", "magnitude": 3.08},
+        {"name": "Fortify Two-Handed", "magnitude": 2.94},
+        {"name": "Lingering Damage Health", "magnitude": 0.4}
+      ]
+    },
+    {
+      "name": "Glow Dust",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Shock", "magnitude": 2.53},
+        {"name": "Fortify Destruction", "magnitude": 3.36},
+        {"name": "Damage Magicka Regen", "magnitude": 4.02},
+        {"name": "Damage Magicka", "magnitude": 12.21}
+      ]
+    },
+    {
+      "name": "Vampire Dust",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 8.3},
+        {"name": "Silence", "magnitude": 98.0},
+        {"name": "Invisibility", "magnitude": 331.0},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Tundra Cotton",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.48},
+        {"name": "Resist Paralysis", "magnitude": 199.0},
+        {"name": "Fortify Block", "magnitude": 0.78},
+        {"name": "Fortify Speech", "magnitude": 1.38}
+      ]
+    },
+    {
+      "name": "Lavender",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Speech", "magnitude": 2.48},
+        {"name": "Stamina Fortification", "magnitude": 4.16},
+        {"name": "Drain Intelligence", "magnitude": 1.38},
+        {"name": "Fortify Conjuration", "magnitude": 2.08}
+      ]
+    },
+    {
+      "name": "Wheat",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health", "magnitude": 3.7},
+        {"name": "Health Fortification", "magnitude": 2.22},
+        {"name": "Damage Magicka Regen", "magnitude": 1.01},
+        {"name": "Damage Stamina Regen", "magnitude": 1.01}
+      ]
+    },
+    {
+      "name": "Fly Amanita",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Stamina", "magnitude": 5.53},
+        {"name": "Resist Fire", "magnitude": 1.76},
+        {"name": "Fortify Two-Handed", "magnitude": 2.24},
+        {"name": "Frenzy", "magnitude": 1.68}
+      ]
+    },
+    {
+      "name": "Bleeding Crown",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fire Aversion", "magnitude": 4.45},
+        {"name": "Poison Aversion", "magnitude": 3.02},
+        {"name": "Fortify Light Armor", "magnitude": 0.93},
+        {"name": "Fortify Block", "magnitude": 0.93}
+      ]
+    },
+    {
+      "name": "White Cap",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 4.01},
+        {"name": "Drain Intelligence", "magnitude": 2.06},
+        {"name": "Fortify Restoration", "magnitude": 1.55},
+        {"name": "Fortify Heavy Armor", "magnitude": 0.78}
+      ]
+    },
+    {
+      "name": "Imp Stool",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Lingering Damage Health", "magnitude": 0.4},
+        {"name": "Health Regeneration", "magnitude": 4.15},
+        {"name": "Health", "magnitude": 6.48},
+        {"name": "Damage Health", "magnitude": 4.17}
+      ]
+    },
+    {
+      "name": "Namira's Rot",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fear", "magnitude": 2.8},
+        {"name": "Damage Magicka", "magnitude": 11.1},
+        {"name": "Health Regeneration", "magnitude": 5.53},
+        {"name": "Fortify Lockpicking", "magnitude": 2.24}
+      ]
+    },
+    {
+      "name": "Blisterwort",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 9.99},
+        {"name": "Frenzy", "magnitude": 2.24},
+        {"name": "Fortify Smithing", "magnitude": 0.98},
+        {"name": "Health", "magnitude": 4.63}
+      ]
+    },
+    {
+      "name": "Torchbug Abdomen",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Lingering Damage Undead", "magnitude": 0.42},
+        {"name": "Stamina Regeneration", "magnitude": 5.0},
+        {"name": "Magic Aversion", "magnitude": 3.74},
+        {"name": "Detect Life", "magnitude": 167.0}
+      ]
+    },
+    {
+      "name": "Juniper Berries",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Marksman", "magnitude": 1.96},
+        {"name": "Damage Stamina Regen", "magnitude": 1.68},
+        {"name": "Health Regeneration", "magnitude": 2.77},
+        {"name": "Fire Aversion", "magnitude": 2.67}
+      ]
+    },
+    {
+      "name": "Deathbell",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 3.69},
+        {"name": "Fatigue", "magnitude": 366.0},
+        {"name": "Slow", "magnitude": 268.0},
+        {"name": "Damage Health", "magnitude": 5.56}
+      ]
+    },
+    {
+      "name": "Charred Skeever Meat",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 4.3},
+        {"name": "Stamina", "magnitude": 11.1},
+        {"name": "Health", "magnitude": 10.18},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Hanging Moss",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 2.51},
+        {"name": "Stamina Fortification", "magnitude": 2.78},
+        {"name": "Fortify One-Handed", "magnitude": 1.68},
+        {"name": "Damage Magicka", "magnitude": 3.89}
+      ]
+    },
+    {
+      "name": "Nirnroot",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 9.38},
+        {"name": "Invisibility", "magnitude": 364.0},
+        {"name": "Resist Magic", "magnitude": 0.81},
+        {"name": "Drain Strength", "magnitude": 1.65}
+      ]
+    },
+    {
+      "name": "Spriggan Sap",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Alteration", "magnitude": 4.98},
+        {"name": "Fortify Smithing", "magnitude": 1.54},
+        {"name": "Damage Magicka Regen", "magnitude": 4.19},
+        {"name": "Fortify Enchanting", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Canis Root",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 9.99},
+        {"name": "Fortify Marksman", "magnitude": 2.52},
+        {"name": "Silence", "magnitude": 43.0},
+        {"name": "Fortify Light Armor", "magnitude": 0.78}
+      ]
+    },
+    {
+      "name": "Jazbay Grapes",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Magicka", "magnitude": 3.61},
+        {"name": "Magic Aversion", "magnitude": 2.08},
+        {"name": "Ravage Health", "magnitude": 2.78},
+        {"name": "Magicka Regeneration", "magnitude": 2.77}
+      ]
+    },
+    {
+      "name": "Hagraven Claw",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Enchanting", "magnitude": 1.61},
+        {"name": "Fortify Speech", "magnitude": 3.58},
+        {"name": "Drain Strength", "magnitude": 3.03},
+        {"name": "Resist Magic", "magnitude": 0.9}
+      ]
+    },
+    {
+      "name": "Mudcrab Chitin",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 1832.0},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Stamina", "magnitude": 7.4},
+        {"name": "Resist Fire", "magnitude": 0.99}
+      ]
+    },
+    {
+      "name": "Bear Claws",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health Fortification", "magnitude": 6.38},
+        {"name": "Stamina", "magnitude": 10.18},
+        {"name": "Fortify One-Handed", "magnitude": 3.08},
+        {"name": "Fortify Block", "magnitude": 1.55}
+      ]
+    },
+    {
+      "name": "Sabre Cat Tooth",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Stamina Fortification", "magnitude": 6.11},
+        {"name": "Poison Aversion", "magnitude": 3.52},
+        {"name": "Fortify One-Handed", "magnitude": 2.94},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.55}
+      ]
+    },
+    {
+      "name": "Sabre Cat Eye",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Night Eye", "magnitude": 865.0},
+        {"name": "Stamina", "magnitude": 10.64},
+        {"name": "Ravage Health", "magnitude": 5.21},
+        {"name": "Damage Magicka", "magnitude": 6.11}
+      ]
+    },
+    {
+      "name": "Large Antlers",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Stamina Fortification", "magnitude": 5.55},
+        {"name": "Stamina", "magnitude": 8.33},
+        {"name": "Damage Stamina Regen", "magnitude": 2.51},
+        {"name": "Slow", "magnitude": 201.0}
+      ]
+    },
+    {
+      "name": "Small Antlers",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Restoration", "magnitude": 3.1},
+        {"name": "Damage Undead", "magnitude": 5.56},
+        {"name": "Poison Aversion", "magnitude": 1.34},
+        {"name": "Speed", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Wisp Wrapping",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Etherialize", "magnitude": 58.0},
+        {"name": "Detect Life", "magnitude": 366.0},
+        {"name": "Fortify Destruction", "magnitude": 2.8},
+        {"name": "Resist Magic", "magnitude": 0.72}
+      ]
+    },
+    {
+      "name": "Powdered Mammoth Tusk",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Block", "magnitude": 2.17},
+        {"name": "Fire Aversion", "magnitude": 5.34},
+        {"name": "Fortify Unarmed", "magnitude": 0.61},
+        {"name": "Fear", "magnitude": 2.52}
+      ]
+    },
+    {
+      "name": "Scaly Pholiota",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Feather", "magnitude": 3.31},
+        {"name": "Stamina Regeneration", "magnitude": 4.15},
+        {"name": "Speed", "magnitude": 2.50},
+        {"name": "Magic Aversion", "magnitude": 1.66}
+      ]
+    },
+    {
+      "name": "Blue Swallowtail",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Conjuration", "magnitude": 3.32},
+        {"name": "Fortify Smithing", "magnitude": 0.98},
+        {"name": "Fortify Enchanting", "magnitude": 0.98},
+        {"name": "Damage Stamina", "magnitude": 3.89}
+      ]
+    },
+    {
+      "name": "Luna Moth",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Magicka", "magnitude": 9.44},
+        {"name": "Magicka Regeneration", "magnitude": 4.15},
+        {"name": "Fortify Light Armor", "magnitude": 1.09},
+        {"name": "Invisibility", "magnitude": 248.0}
+      ]
+    },
+    {
+      "name": "Monarch Butterfly",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Undead", "magnitude": 3.48},
+        {"name": "Fortify Speech", "magnitude": 1.38},
+        {"name": "Damage Magicka", "magnitude": 5.0},
+        {"name": "Damage Magicka Regen", "magnitude": 1.34}
+      ]
+    },
+    {
+      "name": "Blue Mountain Flower",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Conjuration", "magnitude": 2.49},
+        {"name": "Magicka Regeneration", "magnitude": 2.22},
+        {"name": "Damage Health", "magnitude": 2.09},
+        {"name": "Magicka", "magnitude": 2.78}
+      ]
+    },
+    {
+      "name": "Red Mountain Flower",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 1.38},
+        {"name": "Health Fortification", "magnitude": 2.22},
+        {"name": "Damage Magicka Regen", "magnitude": 1.34},
+        {"name": "Health", "magnitude": 2.77}
+      ]
+    },
+    {
+      "name": "Purple Mountain Flower",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Sneak", "magnitude": 0.55},
+        {"name": "Fortify Marksman", "magnitude": 1.68},
+        {"name": "Lingering Damage Undead", "magnitude": 0.14},
+        {"name": "Stamina", "magnitude": 2.78}
+      ]
+    },
+    {
+      "name": "Swamp Fungal Pod",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Lingering Damage Undead", "magnitude": 0.48},
+        {"name": "Resist Shock", "magnitude": 2.31},
+        {"name": "Damage Magicka Regen", "magnitude": 2.68},
+        {"name": "Paralysis", "magnitude": 42}
+      ]
+    },
+    {
+      "name": "Giant Lichen",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 3.52},
+        {"name": "Shock Aversion", "magnitude": 4.45},
+        {"name": "Ravage Health", "magnitude": 6.95},
+        {"name": "Magicka", "magnitude": 8.33}
+      ]
+    },
+    {
+      "name": "Slaughterfish Egg",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 532.0},
+        {"name": "Stamina Fortification", "magnitude": 3.33},
+        {"name": "Lingering Damage Health", "magnitude": 0.24},
+        {"name": "Fortify Pickpocket", "magnitude": 1.68}
+      ]
+    },
+    {
+      "name": "Rock Warbler Egg",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health", "magnitude": 9.25},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Magic Aversion", "magnitude": 3.32},
+        {"name": "Damage Stamina", "magnitude": 3.89}
+      ]
+    },
+    {
+      "name": "Nordic Barnacle",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 599.0},
+        {"name": "Fortify Pickpocket", "magnitude": 2.24},
+        {"name": "Health Regeneration", "magnitude": 4.15},
+        {"name": "Damage Magicka", "magnitude": 3.89}
+      ]
+    },
+    {
+      "name": "Glowing Mushroom",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Etherialize", "magnitude": 45.0},
+        {"name": "Resist Shock", "magnitude": 1.21},
+        {"name": "Fortify Destruction", "magnitude": 1.68},
+        {"name": "Health Fortification", "magnitude": 2.78}
+      ]
+    },
+    {
+      "name": "Grass Pod",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 1.65},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Fortify Alteration", "magnitude": 2.08},
+        {"name": "Magicka", "magnitude": 3.7}
+      ]
+    },
+    {
+      "name": "Mother of Pearl",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Magicka", "magnitude": 9.71},
+        {"name": "Resist Paralysis", "magnitude": 331.0},
+        {"name": "Waterwalking", "magnitude": 665.0},
+        {"name": "Stamina", "magnitude": 6.48}
+      ]
+    },
+    {
+      "name": "Pearl",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 865.0},
+        {"name": "Stamina", "magnitude": 9.71},
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Fortify Restoration", "magnitude": 2.79}
+      ]
+    },
+    {
+      "name": "Dragon's Tongue",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Speech", "magnitude": 2.2},
+        {"name": "Resist Fire", "magnitude": 1.54},
+        {"name": "Fortify Two-Handed", "magnitude": 1.68},
+        {"name": "Fortify Illusion", "magnitude": 2.08}
+      ]
+    },
+    {
+      "name": "Spider Egg",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Marksman", "magnitude": 3.22},
+        {"name": "Damage Stamina", "magnitude": 13.88},
+        {"name": "Damage Magicka Regen", "magnitude": 3.69},
+        {"name": "Detect Life", "magnitude": 333.0}
+      ]
+    },
+    {
+      "name": "Beehive Husk",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Light Armor", "magnitude": 1.24},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Fortify Sneak", "magnitude": 0.83},
+        {"name": "Fortify Destruction", "magnitude": 1.68}
+      ]
+    },
+    {
+      "name": "Bee",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Stamina", "magnitude": 11.56},
+        {"name": "Stamina Regeneration", "magnitude": 6.91},
+        {"name": "Fatigue", "magnitude": 333.0},
+        {"name": "Shock Aversion", "magnitude": 3.56}
+      ]
+    },
+    {
+      "name": "Honeycomb",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Magicka Regeneration", "magnitude": 5.53},
+        {"name": "Fortify One-Handed", "magnitude": 2.8},
+        {"name": "Fatigue", "magnitude": 233.0},
+        {"name": "Fortify Illusion", "magnitude": 2.49}
+      ]
+    },
+    {
+      "name": "Human Heart",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Stamina Regeneration", "magnitude": 6.91},
+        {"name": "Detect Life", "magnitude": 416.0},
+        {"name": "Damage Magicka", "magnitude": 13.88},
+        {"name": "Damage Magicka Regen", "magnitude": 3.85}
+      ]
+    },
+    {
+      "name": "Creep Cluster",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Feather", "magnitude": 2.98},
+        {"name": "Damage Stamina Regen", "magnitude": 3.02},
+        {"name": "Magic Aversion", "magnitude": 2.7},
+        {"name": "Magicka", "magnitude": 6.48}
+      ]
+    },
+    {
+      "name": "Crimson Nirnroot",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 12.16},
+        {"name": "Invisibility", "magnitude": 397.0},
+        {"name": "Resist Magic", "magnitude": 0.99},
+        {"name": "Drain Strength", "magnitude": 2.75}
+      ]
+    },
+    {
+      "name": "Orange Dartwing",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Pickpocket", "magnitude": 2.8},
+        {"name": "Lingering Damage Health", "magnitude": 0.4},
+        {"name": "Silence", "magnitude": 64.0},
+        {"name": "Speed", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Moon Sugar",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Magicka", "magnitude": 11.56},
+        {"name": "Resist Frost", "magnitude": 2.53},
+        {"name": "Magicka Regeneration", "magnitude": 6.91},
+        {"name": "Fire Aversion", "magnitude": 3.34}
+      ]
+    },
+    {
+      "name": "Blue Dartwing",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Pickpocket", "magnitude": 3.08},
+        {"name": "Resist Shock", "magnitude": 1.76},
+        {"name": "Health", "magnitude": 5.55},
+        {"name": "Fear", "magnitude": 1.68}
+      ]
+    },
+    {
+      "name": "Hawk Beak",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Feather", "magnitude": 4.3},
+        {"name": "Resist Shock", "magnitude": 2.42},
+        {"name": "Fortify Marksman", "magnitude": 2.94},
+        {"name": "Stamina", "magnitude": 8.3}
+      ]
+    },
+    {
+      "name": "Hawk Feathers",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Speed", "magnitude": 3.75},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Fortify Light Armor", "magnitude": 1.55},
+        {"name": "Fortify One-Handed", "magnitude": 1.68}
+      ]
+    },
+    {
+      "name": "Mora Tapinella",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Alteration", "magnitude": 4.15},
+        {"name": "Fortify Illusion", "magnitude": 3.32},
+        {"name": "Magicka Fortification", "magnitude": 4.16},
+        {"name": "Lingering Damage Health", "magnitude": 0.32}
+      ]
+    },
+    {
+      "name": "Dwarven Oil",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Sneak", "magnitude": 1.21},
+        {"name": "Magic Aversion", "magnitude": 4.57},
+        {"name": "Fortify Illusion", "magnitude": 3.74},
+        {"name": "Fortify Lockpicking", "magnitude": 2.24}
+      ]
+    },
+    {
+      "name": "Human Flesh",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 6.95},
+        {"name": "Paralysis", "magnitude": 53.0},
+        {"name": "Magicka", "magnitude": 9.25},
+        {"name": "Fortify Sneak", "magnitude": 1.1}
+      ]
+    },
+    {
+      "name": "Histcarp",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Stamina", "magnitude": 9.25},
+        {"name": "Waterbreathing", "magnitude": 366.0},
+        {"name": "Resist Disease", "magnitude": 500.0}
+      ]
+    },
+    {
+      "name": "Cryodiilic Spadetail",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Restoration", "magnitude": 3.72},
+        {"name": "Damage Stamina", "magnitude": 8.33},
+        {"name": "Fear", "magnitude": 1.4},
+        {"name": "Ravage Health", "magnitude": 2.43}
+      ]
+    },
+    {
+      "name": "River Betty",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 8.69},
+        {"name": "Fortify Alteration", "magnitude": 4.57},
+        {"name": "Slow", "magnitude": 335.0},
+        {"name": "Feather", "magnitude": 2.65}
+      ]
+    },
+    {
+      "name": "Abecean Longfin",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 4.9},
+        {"name": "Fortify Light Armor", "magnitude": 1.63},
+        {"name": "Fortify Restoration", "magnitude": 3.1},
+        {"name": "Poison Aversion", "magnitude": 2.68}
+      ]
+    },
+    {
+      "name": "Silverside",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Resist Frost", "magnitude": 1.54},
+        {"name": "Stamina", "magnitude": 4.63},
+        {"name": "Ravage Health", "magnitude": 2.43}
+      ]
+    },
+    {
+      "name": "Amber",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health", "magnitude": 12.49},
+        {"name": "Resist Fire", "magnitude": 2.2},
+        {"name": "Resist Disease", "magnitude": 1665.0},
+        {"name": "Speed", "magnitude": 120.0}
+      ]
+    },
+    {
+      "name": "Black Pearl",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Undead", "magnitude": 9.04},
+        {"name": "Resist Paralysis", "magnitude": 364.0},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Night Eye", "magnitude": 333.0}
+      ]
+    },
+    {
+      "name": "Onyx",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Block", "magnitude": 2.02},
+        {"name": "Fortify Smithing", "magnitude": 1.47},
+        {"name": "Shock Aversion", "magnitude": 4.45},
+        {"name": "Resist Shock", "magnitude": 0.99}
+      ]
+    },
+    {
+      "name": "Sulfur",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 1998.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.42},
+        {"name": "Stamina", "magnitude": 8.33},
+        {"name": "Ravage Health", "magnitude": 5.56}
+      ]
+    },
+    {
+      "name": "Spider Silk",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 4.36},
+        {"name": "Resist Disease", "magnitude": 2498.0},
+        {"name": "Fortify Light Armor", "magnitude": 1.71},
+        {"name": "Fortify Lockpicking", "magnitude": 3.36}
+      ]
+    },
+    {
+      "name": "Dragon Tooth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka", "magnitude": 13.88},
+        {"name": "Fortify Two-Handed", "magnitude": 3.64},
+        {"name": "Magic Aversion", "magnitude": 5.4},
+        {"name": "Resist Paralysis", "magnitude": 397.0}
+      ]
+    },
+    {
+      "name": "Chicken Feathers",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.27},
+        {"name": "Fortify Pickpocket", "magnitude": 1.4},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Shock Aversion", "magnitude": 2.23}
+      ]
+    },
+    {
+      "name": "Horse Hair",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Speed", "magnitude": 1.5},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Resist Shock", "magnitude": 0.55},
+        {"name": "Poison Aversion", "magnitude": 1.17}
+      ]
+    },
+    {
+      "name": "Ironwood Nuts",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Fortify Health", "magnitude": 4.16},
+        {"name": "Fortify Conjuration", "magnitude": 2.91},
+        {"name": "Resist Fire", "magnitude": 1.21},
+        {"name": "Fatigue", "magnitude": 167.0}
+      ]
+    },
+    {
+      "name": "Saltrice",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Stamina Regeneration", "magnitude": 5.53},
+        {"name": "Health Fortification", "magnitude": 3.33},
+        {"name": "Damage Undead", "magnitude": 3.48},
+        {"name": "Stamina Fortification", "magnitude": 2.22}
+      ]
+    },
+    {
+      "name": "Fennel Seeds",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka Fortification", "magnitude": 2.78},
+        {"name": "Stamina Fortification", "magnitude": 2.78},
+        {"name": "Fortify Two-Handed", "magnitude": 1.68},
+        {"name": "Poison Aversion", "magnitude": 1.17}
+      ]
+    },
+    {
+      "name": "Flax Seeds",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Feather", "magnitude": 1.99},
+        {"name": "Fortify Block", "magnitude": 0.78},
+        {"name": "Lingering Damage Health", "magnitude": 0.14},
+        {"name": "Magicka", "magnitude": 12.78}
+      ]
+    },
+    {
+      "name": "Horker Tusk",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka Fortification", "magnitude": 5.83},
+        {"name": "Fortify Conjuration", "magnitude": 3.74},
+        {"name": "Lingering Damage Undead", "magnitude": 0.36},
+        {"name": "Detect Life", "magnitude": 233.0}
+      ]
+    },
+    {
+      "name": "Soul Husk",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Protect Soul", "magnitude": 10.0},
+        {"name": "Resist Paralysis", "magnitude": 497.0},
+        {"name": "Paralysis", "magnitude": 48.0},
+        {"name": "Etherialize", "magnitude": 48.0}
+      ]
+    },
+    {
+      "name": "Bone Hawk Claw",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 4.69},
+        {"name": "Fortify Marksman", "magnitude": 3.64},
+        {"name": "Fortify Conjuration", "magnitude": 4.56},
+        {"name": "Drain Strength", "magnitude": 2.20}
+      ]
+    },
+    {
+      "name": "Bone Hawk Feathers",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 4.69},
+        {"name": "Ravage Health", "magnitude": 9.04},
+        {"name": "Fortify Pickpocket", "magnitude": 3.92},
+        {"name": "Fortify Enchanting", "magnitude": 1.26}
+      ]
+    },
+    {
+      "name": "Argonian Scales",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 6.62},
+        {"name": "Resist Disease", "magnitude": 3164.0},
+        {"name": "Fortify Light Armor", "magnitude": 2.33},
+        {"name": "Fortify Lockpicking", "magnitude": 3.92}
+      ]
+    },
+    {
+      "name": "Putrefied Flesh",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Ravage Health", "magnitude": 7.99},
+        {"name": "Damage Magicka Regen", "magnitude": 3.69},
+        {"name": "Drain Strength", "magnitude": 2.48},
+        {"name": "Resist Poison", "magnitude": 0.99}
+      ]
+    },
+    {
+      "name": "Daedra Silk",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Slow", "magnitude": 469.0},
+        {"name": "Night Eye", "magnitude": 931.0},
+        {"name": "Damage Stamina", "magnitude": 22.2},
+        {"name": "Etherialize", "magnitude": 74.0}
+      ]
+    },
+    {
+      "name": "Dreugh Wax",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 998.0},
+        {"name": "Fatigue", "magnitude": 450.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.56},
+        {"name": "Resist Poison", "magnitude": 4.63}
+      ]
+    },
+    {
+      "name": "Gravetar",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fear", "magnitude": 3.36},
+        {"name": "Resist Frost", "magnitude": 2.42},
+        {"name": "Ravage Health", "magnitude": 7.3},
+        {"name": "Fortify Two-Handed", "magnitude": 2.52}
+      ]
+    },
+    {
+      "name": "Scrib Jelly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Restoration", "magnitude": 2.48},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Fortify Alteration", "magnitude": 2.49}
+      ]
+    },
+    {
+      "name": "Sload Soap",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Undead", "magnitude": 9.73},
+        {"name": "Fortify Pickpocket", "magnitude": 3.64},
+        {"name": "Resist Fire", "magnitude": 2.2},
+        {"name": "Fortify Sneak", "magnitude": 0.94}
+      ]
+    },
+    {
+      "name": "Racer Plumes",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Speed", "magnitude": 2.2},
+        {"name": "Fortify Sneak", "magnitude": 1.27},
+        {"name": "Stamina Regeneration", "magnitude": 5.53},
+        {"name": "Damage Undead", "magnitude": 7.65}
+      ]
+    },
+    {
+      "name": "Bear Fat",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 4.3},
+        {"name": "Stamina", "magnitude": 11.1},
+        {"name": "Health", "magnitude": 10.18},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Fox Fat",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Lockpicking", "magnitude": 3.08},
+        {"name": "Fortify Speech", "magnitude": 2.75},
+        {"name": "Fortify Pickpocket", "magnitude": 2.52},
+        {"name": "Lingering Damage Undead", "magnitude": 0.16}
+      ]
+    },
+    {
+      "name": "Yellow Mountain Flower",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Restoration", "magnitude": 4.65},
+        {"name": "Health Fortification", "magnitude": 5.83},
+        {"name": "Damage Stamina Regen", "magnitude": 3.52},
+        {"name": "Resist Poison", "magnitude": 3.48}
+      ]
+    },
+    {
+      "name": "Ancestor Moth",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 4.86},
+        {"name": "Detect Life", "magnitude": 466.0},
+        {"name": "Fortify Conjuration", "magnitude": 5.81},
+        {"name": "Fortify Enchanting", "magnitude": 1.75}
+      ]
+    },
+    {
+      "name": "Gleamblossom",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Etherialize", "magnitude": 66.0},
+        {"name": "Paralysis", "magnitude": 53.0},
+        {"name": "Health Regeneration", "magnitude": 6.91},
+        {"name": "Fear", "magnitude": 2.38}
+      ]
+    },
+    {
+      "name": "Chaurus Hunter Antennae",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Conjuration", "magnitude": 6.23},
+        {"name": "Damage Stamina", "magnitude": 19.43},
+        {"name": "Damage Magicka Regen", "magnitude": 4.36},
+        {"name": "Fortify Enchanting", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Poison Bloom",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Slow", "magnitude": 436.0},
+        {"name": "Damage Health", "magnitude": 11.12},
+        {"name": "Fear", "magnitude": 3.22},
+        {"name": "Feather", "magnitude": 2.32}
+      ]
+    },
+    {
+      "name": "Salmon Roe",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 898.0},
+        {"name": "Magicka Fortification", "magnitude": 6.11},
+        {"name": "Magicka Regeneration", "magnitude": 4.15},
+        {"name": "Stamina", "magnitude": 2.78}
+      ]
+    },
+    {
+      "name": "Hawk Egg",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Undead", "magnitude": 7.65},
+        {"name": "Night Eye", "magnitude": 732.0},
+        {"name": "Fortify Smithing", "magnitude": 1.4},
+        {"name": "Lingering Damage Undead", "magnitude": 0.24}
+      ]
+    },
+    {
+      "name": "Ashen Grass Pod",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Fire", "magnitude": 2.42},
+        {"name": "Fortify Sneak", "magnitude": 1.1},
+        {"name": "Fortify Lockpicking", "magnitude": 1.96},
+        {"name": "Shock Aversion", "magnitude": 3.12}
+      ]
+    },
+    {
+      "name": "Trama Root",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Shock Aversion", "magnitude": 6.23},
+        {"name": "Damage Magicka", "magnitude": 11.1},
+        {"name": "Drain Strength", "magnitude": 2.75},
+        {"name": "Feather", "magnitude": 1.99}
+      ]
+    },
+    {
+      "name": "Scathecraw",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Ravage Health", "magnitude": 9.73},
+        {"name": "Lingering Damage Health", "magnitude": 0.48},
+        {"name": "Fatigue", "magnitude": 4.0},
+        {"name": "Silence", "magnitude": 72.0}
+      ]
+    },
+    {
+      "name": "Ash Salts",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Drain Strength", "magnitude": 3.85},
+        {"name": "Fortify Enchanting", "magnitude": 1.68},
+        {"name": "Fatigue", "magnitude": 383.0},
+        {"name": "Resist Magic", "magnitude": 0.95}
+      ]
+    },
+    {
+      "name": "Burnt Spriggan Wood",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 5.03},
+        {"name": "Fire Aversion", "magnitude": 5.79},
+        {"name": "Fortify Alteration", "magnitude": 5.81},
+        {"name": "Slow", "magnitude": 385.0}
+      ]
+    },
+    {
+      "name": "Boar Tusk",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Block", "magnitude": 1.86},
+        {"name": "Stamina Fortification", "magnitude": 5.83},
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Frenzy", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Ash Hopper Jelly",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health", "magnitude": 11.1},
+        {"name": "Frost Aversion", "magnitude": 5.34},
+        {"name": "Fortify Illusion", "magnitude": 4.15},
+        {"name": "Fortify Light Armor", "magnitude": 1.24}
+      ]
+    },
+    {
+      "name": "Netch Jelly",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Stamina", "magnitude": 13.88},
+        {"name": "Resist Paralysis", "magnitude": 430.0},
+        {"name": "Feather", "magnitude": 3.97},
+        {"name": "Paralysis", "magnitude": 42.0}
+      ]
+    },
+    {
+      "name": "Ash Creep Cluster",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Resist Fire", "magnitude": 2.53},
+        {"name": "Damage Stamina", "magnitude": 12.21},
+        {"name": "Invisibility", "magnitude": 331.0},
+        {"name": "Fortify Destruction", "magnitude": 1.96}
+      ]
+    },
+    {
+      "name": "Emperor Parasol Moss",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 9.68},
+        {"name": "Fortify Two-Handed", "magnitude": 3.08},
+        {"name": "Damage Health", "magnitude": 6.95},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Felsaad Tern Feathers",
+      "modsrc": "vanilla",
+      "effects": [
+        {"name": "Fortify Light Armor", "magnitude": 2.09},
+        {"name": "Health", "magnitude": 12.03},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Resist Magic", "magnitude": 0.63}
+      ]
+    },
+    {
+      "name": "Marshmerrow",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 5.53},
+        {"name": "Damage Stamina Regen", "magnitude": 2.01},
+        {"name": "Health", "magnitude": 3.70},
+        {"name": "Fortify Enchanting", "magnitude": 0.98}
+      ]
+    },
+    {
+      "name": "Mandrake Root",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Fear", "magnitude": 2.8},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Fortify Destruction", "magnitude": 2.52},
+        {"name": "Resist Poison", "magnitude": 1.32}
+      ]
+    },
+    {
+      "name": "Dragon Heartscales",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Alteration", "magnitude": 6.23},
+        {"name": "Drain Intelligence", "magnitude": 4.13},
+        {"name": "Resist Magic", "magnitude": 1.12},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.71}
+      ]
+    },
+    {
+      "name": "Daedroth Teeth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Stamina Fortification", "magnitude": 7.77},
+        {"name": "Frenzy", "magnitude": 3.36},
+        {"name": "Night Eye", "magnitude": 798.0},
+        {"name": "Drain Strength", "magnitude": 3.16}
+      ]
+    },
+    {
+      "name": "Ogre's Teeth",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Frenzy", "magnitude": 3.92},
+        {"name": "Fortify Unarmed", "magnitude": 0.69},
+        {"name": "Shock Aversion", "magnitude": 5.79},
+        {"name": "Resist Poison", "magnitude": 3.31}
+      ]
+    },
+    {
+      "name": "Daedra Venin",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Paralysis", "magnitude": 70.0},
+        {"name": "Ravage Health", "magnitude": 10.43},
+        {"name": "Drain Intelligence", "magnitude": 3.71},
+        {"name": "Stamina", "magnitude": 12.49}
+      ]
+    },
+    {
+      "name": "Bergamot Seeds",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Resist Paralysis", "magnitude": 348.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.32},
+        {"name": "Resist Disease", "magnitude": 1332.0},
+        {"name": "Silence", "magnitude": 43.0}
+      ]
+    },
+    {
+      "name": "Foxglove Nectar",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 2.98},
+        {"name": "Resist Disease", "magnitude": 833.0},
+        {"name": "Resist Paralysis", "magnitude": 248.0},
+        {"name": "Night Eye", "magnitude": 333.0}
+      ]
+    },
+    {
+      "name": "Ginseng",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Slow", "magnitude": 168.0},
+        {"name": "Damage Undead", "magnitude": 3.48}
+      ]
+    },
+    {
+      "name": "Imp Gall",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Speech", "magnitude": 3.85},
+        {"name": "Resist Paralysis", "magnitude": 414.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.52},
+        {"name": "Fire Aversion", "magnitude": 4.9}
+      ]
+    },
+    {
+      "name": "Sawtooth Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Marksman", "magnitude": 2.8},
+        {"name": "Night Eye", "magnitude": 499.0},
+        {"name": "Resist Paralysis", "magnitude": 232.0},
+        {"name": "Frost Aversion", "magnitude": 3.12}
+      ]
+    },
+    {
+      "name": "Monkshod Root Pulp",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.72},
+        {"name": "Drain Intelligence", "magnitude": 2.75},
+        {"name": "Slow", "magnitude": 3.02},
+        {"name": "Fortify Heavy Armor", "magnitude": 0.78}
+      ]
+    },
+    {
+      "name": "Morning Glory Root Pulp",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Illusion", "magnitude": 4.15},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Slow", "magnitude": 235.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.2}
+      ]
+    },
+    {
+      "name": "Mugwort Seeds",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health", "magnitude": 10.64},
+        {"name": "Fortify One-Handed", "magnitude": 1.96},
+        {"name": "Fortify Light Armor", "magnitude": 0.78},
+        {"name": "Stamina Regeneration", "magnitude": 2.77}
+      ]
+    },
+    {
+      "name": "Peony Seeds",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Stamina Fortification", "magnitude": 5.55},
+        {"name": "Slow", "magnitude": 168.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.16},
+        {"name": "Stamina", "magnitude": 3.7}
+      ]
+    },
+    {
+      "name": "Lotus Seeds",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 998.0},
+        {"name": "Feather", "magnitude": 3.64},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.14}
+      ]
+    },
+    {
+      "name": "St. Jahn's Wort Nectar",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 665.0},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Resist Shock", "magnitude": 1.98},
+        {"name": "Etherialize", "magnitude": 27.0}
+      ]
+    },
+    {
+      "name": "Tiger Lily Nectar",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 665.0},
+        {"name": "Fortify Smithing", "magnitude": 1.26},
+        {"name": "Drain Strength", "magnitude": 1.38},
+        {"name": "Frenzy", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Water Hyacinth Nectar",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 732.0},
+        {"name": "Magic Aversion", "magnitude": 4.15},
+        {"name": "Magicka", "magnitude": 5.55},
+        {"name": "Fatigue", "magnitude": 167.0}
+      ]
+    },
+    {
+      "name": "Gravedust",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Smithing", "magnitude": 1.61},
+        {"name": "Drain Intelligence", "magnitude": 3.03},
+        {"name": "Damage Undead", "magnitude": 6.95},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Blood of a Nord",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Resist Frost", "magnitude": 2.64},
+        {"name": "Fortify Two-Handed", "magnitude": 3.5},
+        {"name": "Stamina Fortification", "magnitude": 0.66}
+      ]
+    },
+    {
+      "name": "Blood of a Breton",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Resist Magic", "magnitude": 1.08},
+        {"name": "Fortify Restoration", "magnitude": 4.5},
+        {"name": "Fortify Conjuration", "magnitude": 4.98}
+      ]
+    },
+    {
+      "name": "Blood of a Redguard",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Resist Poison", "magnitude": 5.3},
+        {"name": "Stamina Regeneration", "magnitude": 8.3},
+        {"name": "Fortify One-Handed", "magnitude": 3.5}
+      ]
+    },
+    {
+      "name": "Blood of an Imperial",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Fortify Speech", "magnitude": 4.13},
+        {"name": "Fortify Heavy Armor", "magnitude": 2.09},
+        {"name": "Fortify Block", "magnitude": 1.71}
+      ]
+    },
+    {
+      "name": "Blood of an Altmer",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Magicka Regeneration", "magnitude": 6.91},
+        {"name": "Magicka Fortification", "magnitude": 7.77},
+        {"name": "Magic Aversion", "magnitude": 5.81}
+      ]
+    },
+    {
+      "name": "Blood of a Dunmer",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Resist Fire", "magnitude": 2.64},
+        {"name": "Fortify Destruction", "magnitude": 3.5},
+        {"name": "Fortify Enchanting", "magnitude": 1.54}
+      ]
+    },
+    {
+      "name": "Blood of a Bosmer",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Resist Disease", "magnitude": 3330.0},
+        {"name": "Fortify Marksman", "magnitude": 3.5},
+        {"name": "Resist Poison", "magnitude": 3.97}
+      ]
+    },
+    {
+      "name": "Blood of an Orc",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Fortify Heavy Armor", "magnitude": 2.17},
+        {"name": "Fortify One-Handed", "magnitude": 3.36},
+        {"name": "Frenzy", "magnitude": 3.22}
+      ]
+    },
+    {
+      "name": "Blood of an Argonian",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Resist Disease", "magnitude": 4163.0},
+        {"name": "Waterbreathing", "magnitude": 798.0},
+        {"name": "Health Regeneration", "magnitude": 5.53}
+      ]
+    },
+    {
+      "name": "Blood of a Khajiit",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Blood", "magnitude": 9.25},
+        {"name": "Speed", "magnitude": 300.0},
+        {"name": "Fortify Sneak", "magnitude": 1.38},
+        {"name": "Night Eye", "magnitude": 665.0}
+      ]
+    },
+    {
+      "name": "Werebear Claws",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Block", "magnitude": 2.32},
+        {"name": "Fortify One-Handed", "magnitude": 3.64},
+        {"name": "Fortify Two-Handed", "magnitude": 3.22},
+        {"name": "Resist Poison", "magnitude": 3.31}
+      ]
+    },
+    {
+      "name": "Troll's Blood",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 6.91},
+        {"name": "Fire Aversion", "magnitude": 6.23},
+        {"name": "Health Fortification", "magnitude": 6.94},
+        {"name": "Ravage Health", "magnitude": 7.65}
+      ]
+    },
+    {
+      "name": "Giant's Blood",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.8},
+        {"name": "Fortify Smithing", "magnitude": 1.68},
+        {"name": "Shock Aversion", "magnitude": 4.9},
+        {"name": "Resist Disease", "magnitude": 1499.0}
+      ]
+    },
+    {
+      "name": "Falmer Blood",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Sneak", "magnitude": 1.43},
+        {"name": "Resist Poison", "magnitude": 5.96},
+        {"name": "Magicka", "magnitude": 12.49},
+        {"name": "Stamina", "magnitude": 12.03}
+      ]
+    },
+    {
+      "name": "Arrowroot",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Slow", "magnitude": 369.0},
+        {"name": "Fortify Marksman", "magnitude": 2.8},
+        {"name": "Fortify Unarmed", "magnitude": 0.4},
+        {"name": "Speed", "magnitude": 6.0}
+      ]
+    },
+    {
+      "name": "Werewolf Blood",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Detect Life", "magnitude": 500.0},
+        {"name": "Fear", "magnitude": 3.78},
+        {"name": "Fortify Alteration", "magnitude": 5.4},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Khajiit Eye",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Night Eye", "magnitude": 998.0},
+        {"name": "Fortify Pickpocket", "magnitude": 4.2},
+        {"name": "Detect Life", "magnitude": 383.0},
+        {"name": "Fear", "magnitude": 2.1}
+      ]
+    },
+    {
+      "name": "Orc Liver",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Smithing", "magnitude": 1.75},
+        {"name": "Fortify Heavy Armor", "magnitude": 2.33},
+        {"name": "Stamina Fortification", "magnitude": 7.22},
+        {"name": "Stamina Regeneration", "magnitude": 9.68}
+      ]
+    },
+    {
+      "name": "Columbine Root Pulp",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Fortify Speech", "magnitude": 2.75},
+        {"name": "Magicka Fortification", "magnitude": 4.72},
+        {"name": "Resist Frost", "magnitude": 0.99},
+        {"name": "Etherialize", "magnitude": 27.0}
+      ]
+    },
+    {
+      "name": "Frogspawn",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 931.0},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Frost Aversion", "magnitude": 3.34},
+        {"name": "Fortify Pickpocket", "magnitude": 1.96}
+      ]
+    },
+    {
+      "name": "Chokeberries",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 5.03},
+        {"name": "Damage Health", "magnitude": 13.9},
+        {"name": "Silence", "magnitude": 85.0},
+        {"name": "Frenzy", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Wolf Liver",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.48},
+        {"name": "Fire Aversion", "magnitude": 3.56},
+        {"name": "Resist Disease", "magnitude": 666.0},
+        {"name": "Detect Life", "magnitude": 167.0}
+      ]
+    },
+    {
+      "name": "Goat Eye",
+      "modsrc": "caco,hunterborn",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 11.1},
+        {"name": "Fortify Illusion", "magnitude": 2.91},
+        {"name": "Damage Magicka Regen", "magnitude": 1.68},
+        {"name": "Damage Stamina Regen", "magnitude": 1.34}
+      ]
+    },
+    {
+      "name": "Stoneflower",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Lingering Damage Undead", "magnitude": 0.46},
+        {"name": "Stamina", "magnitude": 9.71},
+        {"name": "Fortify Speech", "magnitude": 2.75},
+        {"name": "Magicka", "magnitude": 9.25}
+      ]
+    },
+    {
+      "name": "Akanet Flower",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 3.81},
+        {"name": "Magicka", "magnitude": 10.18},
+        {"name": "Detect Life", "magnitude": 333.0},
+        {"name": "Damage Stamina", "magnitude": 11.1}
+      ]
+    },
+    {
+      "name": "Bear Bile",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Heavy Armor", "magnitude": 1.86},
+        {"name": "Fortify Speech", "magnitude": 3.03},
+        {"name": "Fortify Light Armor", "magnitude": 1.55},
+        {"name": "Frenzy", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Blackbrow Bleak",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 2.67},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Fire Aversion", "magnitude": 2.23},
+        {"name": "Shock Aversion", "magnitude": 2.23}
+      ]
+    },
+    {
+      "name": "Blind Betty",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Lingering Damage Undead", "magnitude": 0.6},
+        {"name": "Damage Magicka Regen", "magnitude": 4.52},
+        {"name": "Fortify Unarmed", "magnitude": 0.53},
+        {"name": "Cure Poison", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Gudgeon",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 2165.0},
+        {"name": "Health Regeneration", "magnitude": 8.3},
+        {"name": "Lingering Damage Health", "magnitude": 0.42},
+        {"name": "Health Fortification", "magnitude": 4.44}
+      ]
+    },
+    {
+      "name": "Green Trench",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 4.36},
+        {"name": "Fortify Two-Handed", "magnitude": 2.8},
+        {"name": "Resist Shock", "magnitude": 2.2},
+        {"name": "Ravage Health", "magnitude": 4.17}
+      ]
+    },
+    {
+      "name": "Blue Orfe",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health", "magnitude": 9.25},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Fatigue", "magnitude": 300.0},
+        {"name": "Drain Intelligence", "magnitude": 2.2}
+      ]
+    },
+    {
+      "name": "Cavefish",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Undead", "magnitude": 10.43},
+        {"name": "Detect Life", "magnitude": 450.0},
+        {"name": "Resist Disease", "magnitude": 2914.0},
+        {"name": "Waterbreathing", "magnitude": 765.0}
+      ]
+    },
+    {
+      "name": "Ceanothus Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Pickpocket", "magnitude": 3.22},
+        {"name": "Fortify Lockpicking", "magnitude": 2.8},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.28}
+      ]
+    },
+    {
+      "name": "Cecropia Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Ravage Health", "magnitude": 6.95},
+        {"name": "Damage Health", "magnitude": 6.26},
+        {"name": "Fear", "magnitude": 2.24},
+        {"name": "Resist Poison", "magnitude": 1.66}
+      ]
+    },
+    {
+      "name": "Common Blue Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 4.45},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Health Regeneration", "magnitude": 4.15},
+        {"name": "Magicka Regeneration", "magnitude": 4.15}
+      ]
+    },
+    {
+      "name": "Comet Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 2.68},
+        {"name": "Fortify Alteration", "magnitude": 3.32},
+        {"name": "Fortify Block", "magnitude": 1.09},
+        {"name": "Fortify Heavy Armor", "magnitude": 0.93}
+      ]
+    },
+    {
+      "name": "Common Shiner",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 1998.0},
+        {"name": "Fortify Smithing", "magnitude": 1.12},
+        {"name": "Fortify Unarmed", "magnitude": 0.32},
+        {"name": "Waterbreathing", "magnitude": 233.0}
+      ]
+    },
+    {
+      "name": "Crushed Ant Paste",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.58},
+        {"name": "Feather", "magnitude": 3.31},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Fortify Lockpicking", "magnitude": 2.52}
+      ]
+    },
+    {
+      "name": "Ayleid Moon Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 3.16},
+        {"name": "Fortify Alteration", "magnitude": 4.57},
+        {"name": "Fortify Restoration", "magnitude": 3.41},
+        {"name": "Shock Aversion", "magnitude": 2.67}
+      ]
+    },
+    {
+      "name": "Druadach Dart",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Lingering Damage Undead", "magnitude": 0.52},
+        {"name": "Speed", "magnitude": 2.0},
+        {"name": "Fortify Marksman", "magnitude": 3.08},
+        {"name": "Waterbreathing", "magnitude": 399.0}
+      ]
+    },
+    {
+      "name": "Warpaint Shiner",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 4.19},
+        {"name": "Fortify Illusion", "magnitude": 4.15},
+        {"name": "Damage Magicka Regen", "magnitude": 3.02},
+        {"name": "Health Fortification", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Emperor Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Fire Aversion", "magnitude": 4.01},
+        {"name": "Magicka", "magnitude": 7.4}
+      ]
+    },
+    {
+      "name": "Falkreath Minnow",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Light Armor", "magnitude": 1.4},
+        {"name": "Poison Aversion", "magnitude": 1.68},
+        {"name": "Fortify Lockpicking", "magnitude": 1.4},
+        {"name": "Resist Paralysis", "magnitude": 166.0}
+      ]
+    },
+    {
+      "name": "Ghostfish",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 4.97},
+        {"name": "Speed", "magnitude": 1.75},
+        {"name": "Etherialize", "magnitude": 53.0},
+        {"name": "Shock Aversion", "magnitude": 3.34}
+      ]
+    },
+    {
+      "name": "Golden Rudd",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.64},
+        {"name": "Fortify Restoration", "magnitude": 2.48},
+        {"name": "Resist Disease", "magnitude": 999.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.2}
+      ]
+    },
+    {
+      "name": "Orange Tip Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fire Aversion", "magnitude": 4.9},
+        {"name": "Detect Life", "magnitude": 333.0},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Fortify Marksman", "magnitude": 2.24}
+      ]
+    },
+    {
+      "name": "Redbelly Dace",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Restoration", "magnitude": 2.86},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Frost Aversion", "magnitude": 2.23}
+      ]
+    },
+    {
+      "name": "Atlas Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 3.85},
+        {"name": "Detect Life", "magnitude": 366.0},
+        {"name": "Magic Aversion", "magnitude": 4.15},
+        {"name": "Night Eye", "magnitude": 599.0}
+      ]
+    },
+    {
+      "name": "Emerald Swallowtail",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 2.75},
+        {"name": "Fortify One-Handed", "magnitude": 2.24},
+        {"name": "Resist Disease", "magnitude": 1166.0},
+        {"name": "Fortify Alteration", "magnitude": 2.08}
+      ]
+    },
+    {
+      "name": "Mourning Cloak",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Undead", "magnitude": 4.17},
+        {"name": "Fortify Lockpicking", "magnitude": 1.68},
+        {"name": "Resist Disease", "magnitude": 666.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.14}
+      ]
+    },
+    {
+      "name": "White Witch Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 4.02},
+        {"name": "Silence", "magnitude": 85.0},
+        {"name": "Fortify Sneak", "magnitude": 1.1},
+        {"name": "Fortify One-Handed", "magnitude": 2.52}
+      ]
+    },
+    {
+      "name": "Nordic Swallowtail",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health", "magnitude": 7.4},
+        {"name": "Fire Aversion", "magnitude": 3.12},
+        {"name": "Fortify Two-Handed", "magnitude": 1.96},
+        {"name": "Resist Magic", "magnitude": 0.63}
+      ]
+    },
+    {
+      "name": "Oxgall",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 11.1},
+        {"name": "Fortify Unarmed", "magnitude": 0.53},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.24},
+        {"name": "Fortify Restoration", "magnitude": 2.17}
+      ]
+    },
+    {
+      "name": "Painted Lady",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 3.35},
+        {"name": "Poison Aversion", "magnitude": 3.35},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Resist Poison", "magnitude": 2.65}
+      ]
+    },
+    {
+      "name": "Peacock Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Block", "magnitude": 1.55},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Fortify Pickpocket", "magnitude": 1.68},
+        {"name": "Fortify Sneak", "magnitude": 0.55}
+      ]
+    },
+    {
+      "name": "Pheasant Feathers",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Pickpocket", "magnitude": 1.4},
+        {"name": "Fortify Restoration", "magnitude": 1.55},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Damage Stamina", "magnitude": 3.89}
+      ]
+    },
+    {
+      "name": "Polyphemus Moth",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Illusion", "magnitude": 5.4},
+        {"name": "Fear", "magnitude": 3.08},
+        {"name": "Fortify Conjuration", "magnitude": 4.15},
+        {"name": "Detect Life", "magnitude": 266.0}
+      ]
+    },
+    {
+      "name": "Red Cracker Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Pickpocket", "magnitude": 2.8},
+        {"name": "Poison Aversion", "magnitude": 3.35},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Ravage Health", "magnitude": 6.26}
+      ]
+    },
+    {
+      "name": "Roobrush",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Pickpocket", "magnitude": 3.36},
+        {"name": "Damage Stamina Regen", "magnitude": 3.85},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.28}
+      ]
+    },
+    {
+      "name": "Ruby Shiner",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 2331.0},
+        {"name": "Frost Aversion", "magnitude": 4.9},
+        {"name": "Health", "magnitude": 9.71},
+        {"name": "Magicka", "magnitude": 4.63}
+      ]
+    },
+    {
+      "name": "Padomaic Tigerfish",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.42},
+        {"name": "Frenzy", "magnitude": 1.96},
+        {"name": "Fortify Alteration", "magnitude": 2.08},
+        {"name": "Waterbreathing", "magnitude": 233.0}
+      ]
+    },
+    {
+      "name": "Silverjaw Minnow",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Undead", "magnitude": 8.34},
+        {"name": "Waterbreathing", "magnitude": 698.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.4},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Darkwater Minnow",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fire Aversion", "magnitude": 4.45},
+        {"name": "Fortify Block", "magnitude": 1.24},
+        {"name": "Waterbreathing", "magnitude": 466.0},
+        {"name": "Fortify Speech", "magnitude": 1.65}
+      ]
+    },
+    {
+      "name": "Swamp Betty",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Shock Aversion", "magnitude": 5.34},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.55},
+        {"name": "Fortify Two-Handed", "magnitude": 2.8},
+        {"name": "Paralysis", "magnitude": 53.0}
+      ]
+    },
+    {
+      "name": "Bitterling",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 665.0},
+        {"name": "Frost Aversion", "magnitude": 4.45},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Health", "magnitude": 6.94}
+      ]
+    },
+    {
+      "name": "Akatosh Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Restoration", "magnitude": 3.1},
+        {"name": "Fortify One-Handed", "magnitude": 2.8},
+        {"name": "Frost Aversion", "magnitude": 3.56},
+        {"name": "Fortify Destruction", "magnitude": 2.24}
+      ]
+    },
+    {
+      "name": "Blue Clipper Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Alteration", "magnitude": 4.15},
+        {"name": "Damage Undead", "magnitude": 6.95},
+        {"name": "Fortify Illusion", "magnitude": 3.32},
+        {"name": "Fortify Speech", "magnitude": 1.93}
+      ]
+    },
+    {
+      "name": "Marsh Fritillary",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Speed", "magnitude": 1.65},
+        {"name": "Fortify Light Armor", "magnitude": 1.55},
+        {"name": "Fortify Illusion", "magnitude": 2.08},
+        {"name": "Fear", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Red Admiral Butterfly",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magic Aversion", "magnitude": 4.77},
+        {"name": "Health", "magnitude": 8.33},
+        {"name": "Damage Stamina Regen", "magnitude": 3.02},
+        {"name": "Resist Poison", "magnitude": 2.32}
+      ]
+    },
+    {
+      "name": "Wheat Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health", "magnitude": 9.25},
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Damage Magicka Regen", "magnitude": 3.35},
+        {"name": "Damage Stamina Regen", "magnitude": 3.35}
+      ]
+    },
+    {
+      "name": "Tundra Cotton Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.53},
+        {"name": "Resist Paralysis", "magnitude": 331.0},
+        {"name": "Fortify Block", "magnitude": 1.55},
+        {"name": "Fortify Speech", "magnitude": 2.75}
+      ]
+    },
+    {
+      "name": "Thistle Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fatigue", "magnitude": 333.0},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.55},
+        {"name": "Resist Poison", "magnitude": 3.31},
+        {"name": "Resist Frost", "magnitude": 2.2}
+      ]
+    },
+    {
+      "name": "Snowberry Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Enchanting", "magnitude": 1.4},
+        {"name": "Resist Fire", "magnitude": 2.2},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Resist Shock", "magnitude": 2.2}
+      ]
+    },
+    {
+      "name": "Saltrice Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Stamina Regeneration", "magnitude": 5.53},
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Damage Undead", "magnitude": 6.95},
+        {"name": "Stamina Fortification", "magnitude": 5.55}
+      ]
+    },
+    {
+      "name": "Red Mountain Flower Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 2.75},
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Damage Magicka Regen", "magnitude": 3.35},
+        {"name": "Health", "magnitude": 9.25}
+      ]
+    },
+    {
+      "name": "Purple Mountain Flower Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Sneak", "magnitude": 1.1},
+        {"name": "Fortify Marksman", "magnitude": 2.8},
+        {"name": "Lingering Damage Undead", "magnitude": 0.4},
+        {"name": "Stamina", "magnitude": 9.25}
+      ]
+    },
+    {
+      "name": "Nightshade Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Destruction", "magnitude": 2.8},
+        {"name": "Damage Undead", "magnitude": 6.95},
+        {"name": "Damage Magicka Regen", "magnitude": 3.35},
+        {"name": "Damage Health", "magnitude": 6.95}
+      ]
+    },
+    {
+      "name": "Marshmerrow Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 5.53},
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Health", "magnitude": 9.25},
+        {"name": "Fortify Enchanting", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Lavender Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Speech", "magnitude": 2.75},
+        {"name": "Stamina Fortification", "magnitude": 5.55},
+        {"name": "Drain Intelligence", "magnitude": 2.75},
+        {"name": "Fortify Conjuration", "magnitude": 4.15}
+      ]
+    },
+    {
+      "name": "Juniper Berry Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Marksman", "magnitude": 2.8},
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Health Regeneration", "magnitude": 5.53},
+        {"name": "Fire Aversion", "magnitude": 4.45}
+      ]
+    },
+    {
+      "name": "Jazbay Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Magic Aversion", "magnitude": 4.15},
+        {"name": "Ravage Health", "magnitude": 6.95},
+        {"name": "Magicka Regeneration", "magnitude": 5.53}
+      ]
+    },
+    {
+      "name": "Ironwood Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Fortify Conjuration", "magnitude": 4.15},
+        {"name": "Resist Fire", "magnitude": 2.2},
+        {"name": "Fatigue", "magnitude": 333.0}
+      ]
+    },
+    {
+      "name": "Heather Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Fortify Speech", "magnitude": 2.75},
+        {"name": "Slow", "magnitude": 335.0},
+        {"name": "Fortify Lockpicking", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Hanging Moss Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 3.35},
+        {"name": "Stamina Fortification", "magnitude": 5.55},
+        {"name": "Fortify One-Handed", "magnitude": 2.8},
+        {"name": "Damage Magicka", "magnitude": 11.1}
+      ]
+    },
+    {
+      "name": "Spiky Grass Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 2.75},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Fortify Alteration", "magnitude": 4.15},
+        {"name": "Magicka", "magnitude": 9.25}
+      ]
+    },
+    {
+      "name": "Glowing Mushroom Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Etherialize", "magnitude": 53.0},
+        {"name": "Resist Shock", "magnitude": 2.2},
+        {"name": "Fortify Destruction", "magnitude": 2.8},
+        {"name": "Health Fortification", "magnitude": 5.55}
+      ]
+    },
+    {
+      "name": "Garlic Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 1665.0},
+        {"name": "Stamina Regeneration", "magnitude": 5.53},
+        {"name": "Health Regeneration", "magnitude": 5.53},
+        {"name": "Magicka Regeneration", "magnitude": 5.53}
+      ]
+    },
+    {
+      "name": "Frost Mirriam Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Stamina Fortification", "magnitude": 5.55},
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Fire Aversion", "magnitude": 4.45}
+      ]
+    },
+    {
+      "name": "Flax Seed Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Feather", "magnitude": 3.31},
+        {"name": "Fortify Block", "magnitude": 1.55},
+        {"name": "Lingering Damage Health", "magnitude": 0.4},
+        {"name": "Magicka", "magnitude": 9.25}
+      ]
+    },
+    {
+      "name": "Fennel Seed Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Stamina Fortification", "magnitude": 5.55},
+        {"name": "Fortify Two-Handed", "magnitude": 2.8},
+        {"name": "Poison Aversion", "magnitude": 3.35}
+      ]
+    },
+    {
+      "name": "Elves Ear Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka", "magnitude": 9.25},
+        {"name": "Health", "magnitude": 9.25},
+        {"name": "Frost Aversion", "magnitude": 4.45},
+        {"name": "Resist Fire", "magnitude": 2.2}
+      ]
+    },
+    {
+      "name": "Dragon's Tongue Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Speech", "magnitude": 2.75},
+        {"name": "Resist Fire", "magnitude": 2.2},
+        {"name": "Fortify Two-Handed", "magnitude": 2.8},
+        {"name": "Fortify Illusion", "magnitude": 4.15}
+      ]
+    },
+    {
+      "name": "Creep Cluster Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Feather", "magnitude": 3.31},
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Magic Aversion", "magnitude": 4.15},
+        {"name": "Magicka", "magnitude": 9.25}
+      ]
+    },
+    {
+      "name": "Columbine Root Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Speech", "magnitude": 2.75},
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Etherialize", "magnitude": 53.0}
+      ]
+    },
+    {
+      "name": "Canis Root Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 11.1},
+        {"name": "Fortify Marksman", "magnitude": 2.8},
+        {"name": "Silence", "magnitude": 85.0},
+        {"name": "Fortify Light Armor", "magnitude": 1.55}
+      ]
+    },
+    {
+      "name": "Blue Mountain Flower Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Conjuration", "magnitude": 4.15},
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Damage Health", "magnitude": 6.95},
+        {"name": "Magicka", "magnitude": 9.25}
+      ]
+    },
+    {
+      "name": "Fine-Cut Fire Salts",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fire Aversion", "magnitude": 6.68},
+        {"name": "Resist Frost", "magnitude": 2.75},
+        {"name": "Magicka Regeneration", "magnitude": 5.53},
+        {"name": "Magicka", "magnitude": 10.64}
+      ]
+    },
+    {
+      "name": "Fine-Cut Frost Salts",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 6.68},
+        {"name": "Resist Fire", "magnitude": 2.75},
+        {"name": "Damage Health", "magnitude": 9.73},
+        {"name": "Magicka", "magnitude": 10.64}
+      ]
+    },
+    {
+      "name": "Fine-Cut Void Salts",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Shock Aversion", "magnitude": 6.68},
+        {"name": "Resist Shock", "magnitude": 2.75},
+        {"name": "Silence", "magnitude": 94.0},
+        {"name": "Magicka", "magnitude": 10.64}
+      ]
+    },
+    {
+      "name": "Fine Ground Bonemeal",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 12.21},
+        {"name": "Fortify Conjuration", "magnitude": 4.15},
+        {"name": "Resist Fire", "magnitude": 1.98},
+        {"name": "Night Eye", "magnitude": 399.0}
+      ]
+    },
+    {
+      "name": "Fine-Cut Ash Salts",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Drain Strength", "magnitude": 3.85},
+        {"name": "Fortify Enchanting", "magnitude": 1.68},
+        {"name": "Fatigue", "magnitude": 383.0},
+        {"name": "Resist Magic", "magnitude": 0.95}
+      ]
+    },
+    {
+      "name": "Direnni's Dartwing",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Conjuration", "magnitude": 4.98},
+        {"name": "Frost Aversion", "magnitude": 5.12},
+        {"name": "Speed", "magnitude": 1.35},
+        {"name": "Drain Strength", "magnitude": 1.38}
+      ]
+    },
+    {
+      "name": "Widow Skimmer",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 798.0},
+        {"name": "Shock Aversion", "magnitude": 4.9},
+        {"name": "Ravage Health", "magnitude": 6.95},
+        {"name": "Fortify Lockpicking", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Ebony Jewelwing",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Paralysis", "magnitude": 381.0},
+        {"name": "Damage Magicka Regen", "magnitude": 3.35},
+        {"name": "Resist Shock", "magnitude": 2.2},
+        {"name": "Detect Life", "magnitude": 300.0}
+      ]
+    },
+    {
+      "name": "Banded Pennant",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Lingering Damage Undead", "magnitude": 0.56},
+        {"name": "Stamina Regeneration", "magnitude": 4.15},
+        {"name": "Magicka Regeneration", "magnitude": 5.53},
+        {"name": "Waterwalking", "magnitude": 266.0}
+      ]
+    },
+    {
+      "name": "Crimson Marsh Glider",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Resist Paralysis", "magnitude": 298.0},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Waterwalking", "magnitude": 333.0},
+        {"name": "Poison Aversion", "magnitude": 2.35}
+      ]
+    },
+    {
+      "name": "Frost Skimmer",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fire Aversion", "magnitude": 5.12},
+        {"name": "Resist Frost", "magnitude": 2.31},
+        {"name": "Stamina", "magnitude": 6.94},
+        {"name": "Waterwalking", "magnitude": 399.0}
+      ]
+    },
+    {
+      "name": "Flame Skimmer",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 5.79},
+        {"name": "Speed", "magnitude": 1.65},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Damage Magicka Regen", "magnitude": 2.01}
+      ]
+    },
+    {
+      "name": "Emperor Dartwing",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Restoration", "magnitude": 4.03},
+        {"name": "Fortify Illusion", "magnitude": 4.57},
+        {"name": "Fortify Unarmed", "magnitude": 0.53},
+        {"name": "Damage Undead", "magnitude": 5.56}
+      ]
+    },
+    {
+      "name": "Golden-Ringed Darner",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Lockpicking", "magnitude": 3.64},
+        {"name": "Fortify Light Armor", "magnitude": 1.86},
+        {"name": "Damage Stamina Regen", "magnitude": 3.69},
+        {"name": "Fortify Block", "magnitude": 1.71}
+      ]
+    },
+    {
+      "name": "Emerald Darner",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 732.0},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Damage Undead", "magnitude": 4.87},
+        {"name": "Speed", "magnitude": 1.5}
+      ]
+    },
+    {
+      "name": "Golden Skimmer",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Shock Aversion", "magnitude": 4.01},
+        {"name": "Waterwalking", "magnitude": 599.0},
+        {"name": "Frenzy", "magnitude": 2.52},
+        {"name": "Resist Poison", "magnitude": 1.99}
+      ]
+    },
+    {
+      "name": "Barley",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka", "magnitude": 3.7},
+        {"name": "Magicka Fortification", "magnitude": 2.22},
+        {"name": "Fortify Heavy Armor", "magnitude": 0.78},
+        {"name": "Damage Stamina Regen", "magnitude": 1.01}
+      ]
+    },
+    {
+      "name": "Barley Extract",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka", "magnitude": 9.25},
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.55},
+        {"name": "Damage Stamina Regen", "magnitude": 3.35}
+      ]
+    },
+    {
+      "name": "Redwort Flower",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fortify Destruction", "magnitude": 3.08},
+        {"name": "Ravage Health", "magnitude": 7.3},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Cure Poison", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Tinder Polypore Cap",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Fortify Alteration", "magnitude": 3.32},
+        {"name": "Damage Magicka", "magnitude": 6.11},
+        {"name": "Invisibility", "magnitude": 248.0},
+        {"name": "Resist Disease", "magnitude": 500.0}
+      ]
+    },
+    {
+      "name": "Black Lichen",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Slow", "magnitude": 335.0},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Resist Frost", "magnitude": 1.98},
+        {"name": "Drain Strength", "magnitude": 1.93}
+      ]
+    },
+    {
+      "name": "Blister Pod",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka", "magnitude": 11.1},
+        {"name": "Magicka Fortification", "magnitude": 6.38},
+        {"name": "Night Eye", "magnitude": 765.0},
+        {"name": "Invisibility", "magnitude": 331.0}
+      ]
+    },
+    {
+      "name": "Clouded Funnel Cap",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Damage Magicka", "magnitude": 8.33},
+        {"name": "Magicka", "magnitude": 6.94},
+        {"name": "Damage Stamina", "magnitude": 7.22},
+        {"name": "Fortify Conjuration", "magnitude": 2.08}
+      ]
+    },
+    {
+      "name": "Red Lichen",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Slow", "magnitude": 402.0},
+        {"name": "Fortify Speech", "magnitude": 3.3},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Drain Intelligence", "magnitude": 2.48}
+      ]
+    },
+    {
+      "name": "Violet Coprinus",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Fatigue", "magnitude": 416.0},
+        {"name": "Ravage Health", "magnitude": 8.34},
+        {"name": "Speed", "magnitude": 1.75},
+        {"name": "Waterwalking", "magnitude": 532.0}
+      ]
+    },
+    {
+      "name": "Bloatspore",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 3.3},
+        {"name": "Fortify Alteration", "magnitude": 3.74},
+        {"name": "Detect Life", "magnitude": 200.0},
+        {"name": "Fortify Conjuration", "magnitude": 2.49}
+      ]
+    },
+    {
+      "name": "Wisp Stalks",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 931.0},
+        {"name": "Damage Stamina", "magnitude": 6.11},
+        {"name": "Damage Health", "magnitude": 3.48},
+        {"name": "Damage Magicka", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Aloe Vera",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Health", "magnitude": 11.56},
+        {"name": "Stamina", "magnitude": 11.1},
+        {"name": "Lingering Damage Undead", "magnitude": 0.4},
+        {"name": "Etherialize", "magnitude": 40.0}
+      ]
+    },
+    {
+      "name": "Fire Petals",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Lingering Damage Health", "magnitude": 0.44},
+        {"name": "Resist Fire", "magnitude": 2.31},
+        {"name": "Resist Paralysis", "magnitude": 331.0},
+        {"name": "Ravage Health", "magnitude": 5.56}
+      ]
+    },
+    {
+      "name": "Heather",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Damage Stamina Regen", "magnitude": 2.35},
+        {"name": "Fortify Speech", "magnitude": 1.65},
+        {"name": "Slow", "magnitude": 201.0},
+        {"name": "Fortify Lockpicking", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Elven Heart",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Magicka Regeneration", "magnitude": 8.3},
+        {"name": "Fortify Conjuration", "magnitude": 5.4},
+        {"name": "Fortify Destruction", "magnitude": 3.22},
+        {"name": "Fortify Illusion", "magnitude": 4.98}
+      ]
+    },
+    {
+      "name": "Kwama Cuttle",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 466.0},
+        {"name": "Resist Poison", "magnitude": 2.32},
+        {"name": "Fatigue", "magnitude": 200.0},
+        {"name": "Waterbreathing", "magnitude": 299.0}
+      ]
+    },{
+      "name": "Kwama Egg",
+      "modsrc": "caco",
+      "effects": [
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Stamina", "magnitude": 9.25},
+        {"name": "Resist Frost", "magnitude": 1.76},
+        {"name": "Resist Paralysis", "magnitude": 265.0}
+      ]
+    },
+    {
+      "name": "Scamp Skin",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Lingering Damage Health", "magnitude": 0.6},
+        {"name": "Resist Shock", "magnitude": 2.64},
+        {"name": "Damage Magicka", "magnitude": 19.43},
+        {"name": "Fortify Block", "magnitude": 1.86}
+      ]
+    },
+    {
+      "name": "Wormwood Leaves",
+      "modsrc": "caco,cyrodiil",
+      "effects": [
+        {"name": "Lingering Damage Health", "magnitude": 0.46},
+        {"name": "Lingering Damage Undead", "magnitude": 0.44},
+        {"name": "Fortify Sneak", "magnitude": 0.94},
+        {"name": "Fortify Marksman", "magnitude": 1.68}
+      ]
+    },
+    {
+      "name": "Dawnshade",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 3.69},
+        {"name": "Silence", "magnitude": 85.0},
+        {"name": "Drain Intelligence", "magnitude": 2.75},
+        {"name": "Fortify Enchanting", "magnitude": 1.26}
+      ]
+    },
+    {
+      "name": "Milk Thistle Branch",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Light", "magnitude": 5.0},
+        {"name": "Fortify Restoration", "magnitude": 3.1},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Paralysis", "magnitude": 42.0}
+      ]
+    },
+    {
+      "name": "Ash Salts",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Slow", "magnitude": 5.0},
+        {"name": "Resist Magic", "magnitude": 1.0},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Magicka Fortification", "magnitude": 4.0}
+      ]
+    },
+    {
+      "name": "Blackberries",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 4.98},
+        {"name": "Resist Shock", "magnitude": 1.98},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.4},
+        {"name": "Magicka", "magnitude": 2.78}
+      ]
+    },
+    {
+      "name": "Cairn Bolete",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health", "magnitude": 9.25},
+        {"name": "Damage Magicka", "magnitude": 5.0},
+        {"name": "Resist Magic", "magnitude": 0.9},
+        {"name": "Shock Damage", "magnitude": 4.0}
+      ]
+    },
+    {
+      "name": "Red Cinnabar Polypore",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health", "magnitude": 10.18},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.55},
+        {"name": "Damage Health", "magnitude": 11.1},
+        {"name": "Damage Stamina", "magnitude": 9.99}
+      ]
+    },
+    {
+      "name": "Yellow Cinnabar Polypore",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health", "magnitude": 10.18},
+        {"name": "Health Regeneration", "magnitude": 5.53},
+        {"name": "Damage Magicka", "magnitude": 11.1},
+        {"name": "Damage Magicka Regen", "magnitude": 3.02}
+      ]
+    },
+    {
+      "name": "Land Dreugh Wax",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 12.21},
+        {"name": "Resist Poison", "magnitude": 3.31},
+        {"name": "Waterbreathing", "magnitude": 665.0},
+        {"name": "Damage Health", "magnitude": 6.26}
+      ]
+    },
+    {
+      "name": "Dryad Saddle Polypore",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Fortify Lockpicking", "magnitude": 3.08},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Slow", "magnitude": 335.0},
+        {"name": "Frost Damage", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Cold Fire Salts",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 4.9},
+        {"name": "Resist Fire", "magnitude": 2.2},
+        {"name": "Magicka", "magnitude": 9.25},
+        {"name": "Magicka Regeneration", "magnitude": 4.98}
+      ]
+    },
+    {
+      "name": "Blueberries",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 3.05},
+        {"name": "Resist Shock", "magnitude": 0.6},
+        {"name": "Fortify Heavy Armor", "magnitude": 0.78},
+        {"name": "Damage Magicka Regen", "magnitude": 3.02}
+      ]
+    },
+    {
+      "name": "Emetic Russula",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Detect Life", "magnitude": 333.0},
+        {"name": "Shield", "magnitude": 10.0},
+        {"name": "Resist Magic", "magnitude": 0.9},
+        {"name": "Damage Health Regen", "magnitude": 10.0}
+      ]
+    },
+    {
+      "name": "Elf Cup",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Frenzy", "magnitude": 2.8},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Stamina", "magnitude": 9.25},
+        {"name": "Fatigue", "magnitude": 333.0}
+      ]
+    },
+    {
+      "name": "Blue Flax",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Magicka", "magnitude": 2.98},
+        {"name": "Fortify One-Handed", "magnitude": 2.8},
+        {"name": "Shield", "magnitude": 10.0},
+        {"name": "Damage Stamina Regen", "magnitude": 3.02}
+      ]
+    },
+    {
+      "name": "Domica Redwort",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Damage Health", "magnitude": 6.95},
+        {"name": "Invisibility", "magnitude": 331.0}
+      ]
+    },
+    {
+      "name": "Ginkgo Leaves",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina Fortification", "magnitude": 6.11},
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Magic Aversion", "magnitude": 4.15},
+        {"name": "Shock Damage", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Grapes",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina", "magnitude": 10.18},
+        {"name": "Waterwalking", "magnitude": 665.0},
+        {"name": "Fortify Unarmed", "magnitude": 0.53},
+        {"name": "Damage Stamina Regen", "magnitude": 3.02}
+      ]
+    },
+    {
+      "name": "Stinkhorn",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 7.65},
+        {"name": "Magicka Fortification", "magnitude": 5.55},
+        {"name": "Waterwalking", "magnitude": 665.0},
+        {"name": "Fortify Smithing", "magnitude": 1.26}
+      ]
+    },
+    {
+      "name": "Somnalius Frond",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Fortify Barter", "magnitude": 3.03},
+        {"name": "Damage Health Regen", "magnitude": 5.0},
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Waterwalking", "magnitude": 665.0}
+      ]
+    },
+    {
+      "name": "Green Stain Cup",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina Regeneration", "magnitude": 6.08},
+        {"name": "Slow", "magnitude": 335.0},
+        {"name": "Waterwalking", "magnitude": 665.0},
+        {"name": "Damage Magicka", "magnitude": 9.99}
+      ]
+    },
+    {
+      "name": "Summer Bolete",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Fortify Marksman", "magnitude": 3.08},
+        {"name": "Fortify Light Armor", "magnitude": 1.55},
+        {"name": "Fear", "magnitude": 2.8},
+        {"name": "Damage Health Regen", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Red Flax",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 3.69},
+        {"name": "Resist Magic", "magnitude": 0.9},
+        {"name": "Shield", "magnitude": 10.0},
+        {"name": "Drain Strength", "magnitude": 2.48}
+      ]
+    },
+    {
+      "name": "Yellow Flax",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Fortify Pickpocket", "magnitude": 3.08},
+        {"name": "Detect Life Potion - Exterior", "magnitude": 333.0},
+        {"name": "Shield", "magnitude": 0.0},
+        {"name": "Damage Health", "magnitude": 6.26}
+      ]
+    },
+    {
+      "name": "Goblin Wax",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 3.31},
+        {"name": "Fortify Two-Handed", "magnitude": 2.8},
+        {"name": "Resist Paralysis", "magnitude": 331.0},
+        {"name": "Ravage Health", "magnitude": 6.26}
+      ]
+    },
+    {
+      "name": "Rice",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health", "magnitude": 10.18},
+        {"name": "Health Fortification", "magnitude": 5.55},
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Damage Undead", "magnitude": 6.26}
+      ]
+    },
+    {
+      "name": "Steel-Blue Entoloma",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Resist Poison", "magnitude": 3.31},
+        {"name": "Shock Aversion", "magnitude": 4.45},
+        {"name": "Resist Disease", "magnitude": 1665.0}
+      ]
+    },
+    {
+      "name": "Bog Beacon",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Magicka", "magnitude": 10.18},
+        {"name": "Damage Health", "magnitude": 11.1},
+        {"name": "Frenzy", "magnitude": 1.6},
+        {"name": "Damage Health Regen", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Blue Entoloma",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Silence", "magnitude": 85.0},
+        {"name": "Magic Aversion", "magnitude": 4.57},
+        {"name": "Health", "magnitude": 9.25},
+        {"name": "Invisibility", "magnitude": 331.0}
+      ]
+    },
+    {
+      "name": "Eltheric Grouper",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina", "magnitude": 5.0},
+        {"name": "Damage Stamina Regen", "magnitude": 5.0},
+        {"name": "Ravage Health", "magnitude": 2.0},
+        {"name": "Resist Frost", "magnitude": 3.0}
+      ]
+    },
+    {
+      "name": "Bjoulsae Hake",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Frost Aversion", "magnitude": 3.0},
+        {"name": "Fortify Sneak", "magnitude": 4.0},
+        {"name": "Poison Aversion", "magnitude": 2.0},
+        {"name": "Fortify Restoration", "magnitude": 4.0}
+      ]
+    },
+    {
+      "name": "Blessed Thistle Branch",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina", "magnitude": 9.25},
+        {"name": "Fortify Two-Handed", "magnitude": 2.8},
+        {"name": "Ravage Health", "magnitude": 6.95},
+        {"name": "Speed", "magnitude": 1.65}
+      ]
+    },
+    {
+      "name": "Yellow Amanita",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 3.69},
+        {"name": "Waterbreathing", "magnitude": 665.0},
+        {"name": "Frenzy", "magnitude": 2.8},
+        {"name": "Feather", "magnitude": 2.98}
+      ]
+    },
+    {
+      "name": "Mort Flesh",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 3.0},
+        {"name": "Fear", "magnitude": 1.0},
+        {"name": "Fortify Smithing", "magnitude": 1.4},
+        {"name": "Damage Magicka", "magnitude": 3.0}
+      ]
+    },
+    {
+      "name": "Minotaur Horn",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Magicka Regeneration", "magnitude": 6.08},
+        {"name": "Paralysis", "magnitude": 53.0},
+        {"name": "Stamina Fortification", "magnitude": 5.55},
+        {"name": "Fortify Unarmed", "magnitude": 0.53}
+      ]
+    },
+    {
+      "name": "Motherwort Sprig",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 3.64},
+        {"name": "Fortify Restoration", "magnitude": 3.1},
+        {"name": "Damage Magicka", "magnitude": 11.1},
+        {"name": "Cure Poison", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Lady's Mantle Leaves",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Etherialize", "magnitude": 53.0},
+        {"name": "Damage Stamina", "magnitude": 11.1},
+        {"name": "Night Eye", "magnitude": 665.0},
+        {"name": "Feather", "magnitude": 2.98}
+      ]
+    },
+    {
+      "name": "Red Mudcrab Chitin",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina", "magnitude": 10.18},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Resist Poison", "magnitude": 3.31},
+        {"name": "Resist Fire", "magnitude": 2.2}
+      ]
+    },
+    {
+      "name": "Heartland Highfin",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health", "magnitude": 10.18},
+        {"name": "Fortify Destruction", "magnitude": 2.81},
+        {"name": "Damage Health Regen", "magnitude": 5.0},
+        {"name": "Light", "magnitude": 60.0}
+      ]
+    },
+    {
+      "name": "Black Eagle Feathers",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 3.69},
+        {"name": "Fortify Light Armor", "magnitude": 1.55},
+        {"name": "Speed", "magnitude": 1.65},
+        {"name": "Fortify Sneak", "magnitude": 0.99}
+      ]
+    },
+    {
+      "name": "Black Eagle Beak",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina", "magnitude": 10.18},
+        {"name": "Resist Disease", "magnitude": 1665.0},
+        {"name": "Fortify One-Handed", "magnitude": 2.8},
+        {"name": "Detect Life", "magnitude": 333.0}
+      ]
+    },
+    {
+      "name": "Wood Warbler Egg",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 12.21},
+        {"name": "Frenzy", "magnitude": 2.8},
+        {"name": "Invisibility", "magnitude": 331.0},
+        {"name": "Speed", "magnitude": 1.49}
+      ]
+    },
+    {
+      "name": "Goldengill",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Shock Damage", "magnitude": 5.0},
+        {"name": "Speed", "magnitude": 1.65},
+        {"name": "Resist Disease", "magnitude": 1665.0},
+        {"name": "Drain Strength", "magnitude": 2.48}
+      ]
+    },
+    {
+      "name": "Nibenese Silverbird Egg",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 3.69},
+        {"name": "Speed", "magnitude": 1.65},
+        {"name": "Damage Undead", "magnitude": 6.95},
+        {"name": "Fortify Lockpicking", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Rainbow Fish",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina", "magnitude": 10.18},
+        {"name": "Frost Aversion", "magnitude": 4.45},
+        {"name": "Fortify Illusion", "magnitude": 4.15},
+        {"name": "Poison Aversion", "magnitude": 3.02}
+      ]
+    },
+    {
+      "name": "Golden Kingfisher Egg",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Speed", "magnitude": 3.75},
+        {"name": "Shock Damage", "magnitude": 2.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.4},
+        {"name": "Health Fortification", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Colovian Nuthatch Egg",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina Regeneration", "magnitude": 6.08},
+        {"name": "Feather", "magnitude": 3.31},
+        {"name": "Light", "magnitude": 5.0},
+        {"name": "Paralysis", "magnitude": 10.0}
+      ]
+    },
+    {
+      "name": "Eastern Wallcreeper Egg",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Magicka Regeneration", "magnitude": 5.53},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Magic Aversion", "magnitude": 4.15},
+        {"name": "Damage Health", "magnitude": 6.26}
+      ]
+    },
+    {
+      "name": "Nibenay Snapper",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Magicka Fortification", "magnitude": 6.11},
+        {"name": "Damage Stamina Regen", "magnitude": 3.35},
+        {"name": "Etherialize", "magnitude": 53.0},
+        {"name": "Shock Aversion", "magnitude": 4.01}
+      ]
+    },
+    {
+      "name": "Swamp Sparrow Egg",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Fortify Illusion", "magnitude": 4.57},
+        {"name": "Detect Life Potion - Exterior", "magnitude": 333.0},
+        {"name": "Drain Intelligence", "magnitude": 2.75},
+        {"name": "Ravage Health", "magnitude": 6.26}
+      ]
+    },
+    {
+      "name": "Buck Moth Wing",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Stamina", "magnitude": 6.08},
+        {"name": "Damage Magicka Regen", "magnitude": 3.35},
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Magic Aversion", "magnitude": 1.66}
+      ]
+    },
+    {
+      "name": "Gypsy Moth Wing",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Shock Damage", "magnitude": 3.0},
+        {"name": "Waterbreathing", "magnitude": 665.0},
+        {"name": "Fortify Sneak", "magnitude": 1.1},
+        {"name": "Poison Aversion", "magnitude": 3.02}
+      ]
+    },
+    {
+      "name": "Magus Mint",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Night Eye", "magnitude": 665.0},
+        {"name": "Magic Aversion", "magnitude": 4.15},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Fatigue", "magnitude": 333.0}
+      ]
+    },
+    {
+      "name": "Motherwort",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Resist Poison", "magnitude": 3.64},
+        {"name": "Damage Stamina", "magnitude": 11.1},
+        {"name": "Damage Magicka", "magnitude": 11.1},
+        {"name": "Invisibility", "magnitude": 331.0}
+      ]
+    },
+    {
+      "name": "Black Dartwing",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Magicka", "magnitude": 10.18},
+        {"name": "Ravage Health", "magnitude": 6.95},
+        {"name": "Fortify Destruction", "magnitude": 2.81},
+        {"name": "Lingering Damage Health", "magnitude": 0.36}
+      ]
+    },
+    {
+      "name": "Green Dartwing",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Resist Fire", "magnitude": 2.42},
+        {"name": "Silence", "magnitude": 85.0},
+        {"name": "Fortify Marksman", "magnitude": 2.8},
+        {"name": "Frenzy", "magnitude": 2.52}
+      ]
+    },
+    {
+      "name": "Refined Frost Salts",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Fire Aversion", "magnitude": 4.9},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Magicka", "magnitude": 9.25},
+        {"name": "Fortify Conjuration", "magnitude": 3.58}
+      ]
+    },
+    {
+      "name": "Mountain Lion Teeth",
+      "modsrc": "cyrodiil",
+      "effects": [
+        {"name": "Health", "magnitude": 10.18},
+        {"name": "Fortify Two-Handed", "magnitude": 2.8},
+        {"name": "Feather", "magnitude": 3.31},
+        {"name": "Damage Magicka Regen", "magnitude": 3.02}
+      ]
+    },
+        {
+      "name": "Goat Eye",
+      "modsrc": "caco,hunterborn",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 11.1},
+        {"name": "Fortify Illusion", "magnitude": 2.91},
+        {"name": "Damage Magicka", "magnitude": 1.68},
+        {"name": "Damage Stamina Regen", "magnitude": 1.34}
+      ]
+    },
+    {
+      "name": "Eye of Bear",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Detect Life", "magnitude": 310.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.4},
+        {"name": "Exploit Weakness", "magnitude": 10.0},
+        {"name": "Resist Shock", "magnitude": 0.8}
+      ]
+    },
+    {
+      "name": "Eye of Fox",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Discerning", "magnitude": 30.0},
+        {"name": "Stamina Fortification", "magnitude": 5.0},
+        {"name": "Health", "magnitude": 8.0},
+        {"name": "Thrill", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Polished Hare Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Marksman", "magnitude": 3.08},
+        {"name": "Fortify Lockpicking", "magnitude": 2.8},
+        {"name": "Magic Aversion", "magnitude": 4.0},
+        {"name": "Fortify Restoration", "magnitude": 2.4}
+      ]
+    },
+    {
+      "name": "Polished Mammoth Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Muddle", "magnitude": 10.0},
+        {"name": "Health Regeneration", "magnitude": 5.1},
+        {"name": "Magicka Regeneration", "magnitude": 4.2},
+        {"name": "Consumption", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Eye of Wolf",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Night Eye", "magnitude": 600.0},
+        {"name": "Resist Paralysis", "magnitude": 300.0},
+        {"name": "Health", "magnitude": 8.0},
+        {"name": "Hircine's Sight", "magnitude": 10.0}
+      ]
+    },
+    {
+      "name": "Bear Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Heavy Armor", "magnitude": 1.86},
+        {"name": "Fortify Speech", "magnitude": 3.03},
+        {"name": "Fortify Light Armor", "magnitude": 1.55},
+        {"name": "Frenzy", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Deer Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Resist Disease", "magnitude": 18.0},
+        {"name": "Poison Aversion", "magnitude": 3.0},
+        {"name": "Damage Stamina Regen", "magnitude": 2.5},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Goat Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 11.1},
+        {"name": "Fortify Illusion", "magnitude": 2.91},
+        {"name": "Damage Magicka Regen", "magnitude": 1.68},
+        {"name": "Damage Stamina Regen", "magnitude": 1.34}
+      ]
+    },
+    {
+      "name": "Sabre Cat Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Alteration", "magnitude": 4.6},
+        {"name": "Damage Magicka", "magnitude": 12.0},
+        {"name": "Fortify Speech", "magnitude": 2.6},
+        {"name": "Resist Disease", "magnitude": 800.0}
+      ]
+    },
+    {
+      "name": "Wolf Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.48},
+        {"name": "Fire Aversion", "magnitude": 3.56},
+        {"name": "Resist Disease", "magnitude": 666.0},
+        {"name": "Detect Life", "magnitude": 167.0}
+      ]
+    },
+    {
+      "name": "Mammoth Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Paralysis", "magnitude": 57.0},
+        {"name": "Damage Magicka Regen", "magnitude": 3.9},
+        {"name": "Damage Stamina Regen", "magnitude": 3.0},
+        {"name": "Resist Poison", "magnitude": 2.7}
+      ]
+    },
+    {
+      "name": "Bear Tooth",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Magicka", "magnitude": 9.25},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.5},
+        {"name": "Fortify Alteration", "magnitude": 3.0},
+        {"name": "Damage Magicka Regen", "magnitude": 2.3}
+      ]
+    },
+    {
+      "name": "Canine Tooth",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 6.0},
+        {"name": "Lingering Damage Health", "magnitude": 0.3},
+        {"name": "Fire Aversion", "magnitude": 3.0},
+        {"name": "Fortify One-Handed", "magnitude": 2.0}
+      ]
+    },
+    {
+      "name": "Sabre Cat Claws",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Light Armor", "magnitude": 1.7},
+        {"name": "Health Fortification", "magnitude": 5.7},
+        {"name": "Fortify Illusion", "magnitude": 4.15},
+        {"name": "Stamina", "magnitude": 3.0}
+      ]
+    },
+    {
+      "name": "Wolf Claws",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Ravage Health", "magnitude": 6.95},
+        {"name": "Damage Undead", "magnitude": 6.95},
+        {"name": "Lingering Damage Undead", "magnitude": 0.3},
+        {"name": "Fortify Marksman", "magnitude": 2.1}
+      ]
+    },
+    {
+      "name": "Powdered Mudcrab Chitin",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Waterwalking", "magnitude": 750.0},
+        {"name": "Waterbreathing", "magnitude": 670.0},
+        {"name": "Poison Aversion", "magnitude": 2.5},
+        {"name": "Consumption", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Bull Horn",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Discerning", "magnitude": 1.0},
+        {"name": "Stamina Fortification", "magnitude": 5.0},
+        {"name": "Ineptitude", "magnitude": 10.0},
+        {"name": "Thrill", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Boiled Skeever Tail",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 6.95},
+        {"name": "Damage Undead", "magnitude": 6.0},
+        {"name": "Magicka", "magnitude": 6.0},
+        {"name": "Ineptitude", "magnitude": 10.0}
+      ]
+    },
+    {
+      "name": "Polished Scales",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Waterbreathing", "magnitude": 710.0},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Resist Poison", "magnitude": 1.8},
+        {"name": "Fortify Enchanting", "magnitude": 1.25}
+      ]
+    },
+    {
+      "name": "Cured Skeever Hide",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Magicka", "magnitude": 9.0},
+        {"name": "Lingering Damage Undead", "magnitude": 0.3},
+        {"name": "Fortify Destruction", "magnitude": 2.0},
+        {"name": "Prowling", "magnitude": 2.0}
+      ]
+    },
+    {
+      "name": "Large Mudcrab Chitin",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Health Fortification", "magnitude": 5.5},
+        {"name": "Fortify Two-Handed", "magnitude": 2.7},
+        {"name": "Drain Intelligence", "magnitude": 2.5},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Large Bear Claws",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.65},
+        {"name": "Damage Stamina Regen", "magnitude": 3.4},
+        {"name": "Fortify Light Armor", "magnitude": 1.45},
+        {"name": "Fortify Speech", "magnitude": 1.8}
+      ]
+    },
+    {
+      "name": "Flawless Sabre Cat Tooth",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Drain Strength", "magnitude": 2.9},
+        {"name": "Fortify Sneak", "magnitude": 1.2},
+        {"name": "Muddle", "magnitude": 10.0},
+        {"name": "Stamina", "magnitude": 8.0}
+      ]
+    },
+    {
+      "name": "Polished Sabre Cat Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Etherialize", "magnitude": 59.0},
+        {"name": "Resist Fire", "magnitude": 2.2},
+        {"name": "Frost Aversion", "magnitude": 4.2},
+        {"name": "Prowling", "magnitude": 2.0}
+      ]
+    },
+    {
+      "name": "Great Antlers",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fatigue", "magnitude": 330.0},
+        {"name": "Drain Strength", "magnitude": 2.6},
+        {"name": "Fortify Pickpocket", "magnitude": 2.3},
+        {"name": "Ineptitude", "magnitude": 10.0}
+      ]
+    },
+    {
+      "name": "Doe Antlers",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Discerning", "magnitude": 1.0},
+        {"name": "Speed", "magnitude": 1.6},
+        {"name": "Hunter's Boon", "magnitude": 2.0},
+        {"name": "Health", "magnitude": 7.0}
+      ]
+    },
+    {
+      "name": "Charred Hawk Beak",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Pathfinding", "magnitude": 3.0},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Damage Magicka", "magnitude": 7.0},
+        {"name": "Stamina Regeneration", "magnitude": 8.3}
+      ]
+    },
+    {
+      "name": "Dyed Hawk Feathers",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Illusion", "magnitude": 4.3},
+        {"name": "Fortify Conjuration", "magnitude": 3.8},
+        {"name": "Thrill", "magnitude": 5.0},
+        {"name": "Cure Poison", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Large Sabre Cat Claws",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Damage Magicka Regen", "magnitude": 3.7},
+        {"name": "Waterwalking", "magnitude": 660.0},
+        {"name": "Fatigue", "magnitude": 300.0},
+        {"name": "Fortify Light Armor", "magnitude": 2.24}
+      ]
+    },
+    {
+      "name": "Flawless Bear Tooth",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Damage Stamina", "magnitude": 11.0},
+        {"name": "Magicka Regeneration", "magnitude": 5.5},
+        {"name": "Stamina", "magnitude": 7.0},
+        {"name": "Shock Aversion", "magnitude": 4.2}
+      ]
+    },
+    {
+      "name": "Polished Wolf Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Sneak", "magnitude": 1.28},
+        {"name": "Resist Disease", "magnitude": 1850.0},
+        {"name": "Frenzy", "magnitude": 2.4},
+        {"name": "Hunter's Boon", "magnitude": 2.0}
+      ]
+    },
+    {
+      "name": "Polished Fox Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Pathfinding", "magnitude": 3.0},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Fire Aversion", "magnitude": 3.7},
+        {"name": "Prowling", "magnitude": 2.0}
+      ]
+    },
+    {
+      "name": "Polished Bear Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Stamina Fortification", "magnitude": 5.7},
+        {"name": "Resist Frost", "magnitude": 2.2},
+        {"name": "Exploit Weakness", "magnitude": 10.0},
+        {"name": "Night Eye", "magnitude": 350.0}
+      ]
+    },
+    {
+      "name": "Eye of Hare",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Pathfinding", "magnitude": 3.0},
+        {"name": "Fortify Pickpocket", "magnitude": 2.6},
+        {"name": "Shock Aversion", "magnitude": 4.0},
+        {"name": "Cure Disease", "magnitude": 1.0}
+      ]
+    },
+    {
+      "name": "Eye of Mammoth",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 5.5},
+        {"name": "Fortify Block", "magnitude": 1.5},
+        {"name": "Slow", "magnitude": 320.0},
+        {"name": "Feather", "magnitude": 3.0}
+      ]
+    },
+    {
+      "name": "Eye of Troll",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify One-Handed", "magnitude": 2.8},
+        {"name": "Fortify Block", "magnitude": 1.2},
+        {"name": "Slow", "magnitude": 270.0},
+        {"name": "Fortify Restoration", "magnitude": 2.8}
+      ]
+    },
+    {
+      "name": "Eye of Werewolf",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Speed", "magnitude": 1.8},
+        {"name": "Resist Poison", "magnitude": 3.3},
+        {"name": "Fear", "magnitude": 2.8},
+        {"name": "Hunter's Boon", "magnitude": 2.0}
+      ]
+    },
+    {
+      "name": "Eye of Dragon",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Detect Life", "magnitude": 450.0},
+        {"name": "Ravage Health", "magnitude": 8.0},
+        {"name": "Fear", "magnitude": 2.8},
+        {"name": "Fortify Destruction", "magnitude": 2.7}
+      ]
+    },
+    {
+      "name": "Werewolf Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Frenzy", "magnitude": 3.5},
+        {"name": "Ravage Health", "magnitude": 7.6},
+        {"name": "Consumption", "magnitude": 1.0},
+        {"name": "Resist Shock", "magnitude": 1.2}
+      ]
+    },
+    {
+      "name": "Troll Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Health Regeneration", "magnitude": 6.91},
+        {"name": "Fire Aversion", "magnitude": 6.23},
+        {"name": "Health Fortification", "magnitude": 6.94},
+        {"name": "Ravage Health", "magnitude": 7.65}
+      ]
+    },
+    {
+      "name": "Dragon Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Magicka", "magnitude": 13.88},
+        {"name": "Fortify Two-Handed", "magnitude": 3.64},
+        {"name": "Magic Aversion", "magnitude": 5.4},
+        {"name": "Resist Paralysis", "magnitude": 397.0}
+      ]
+    },
+    {
+      "name": "Polished Troll Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Resist Fire", "magnitude": 2.3},
+        {"name": "Muddle", "magnitude": 10.0},
+        {"name": "Frost Aversion", "magnitude": 4.2},
+        {"name": "Fortify Two-Handed", "magnitude": 2.1}
+      ]
+    },
+    {
+      "name": "Polished Werewolf Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Unarmed", "magnitude": 0.65},
+        {"name": "Magicka Fortification", "magnitude": 5.9},
+        {"name": "Hircine's Sight", "magnitude": 10.0},
+        {"name": "Invisibility", "magnitude": 248.0}
+      ]
+    },
+    {
+      "name": "Polished Dragon Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Fortify Shouts", "magnitude": 0.1},
+        {"name": "Resist Magic", "magnitude": 0.9},
+        {"name": "Resist Paralysis", "magnitude": 350.0},
+        {"name": "Fortify Heavy Armor", "magnitude": 1.4}
+      ]
+    },
+    {
+      "name": "Bonesap",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Discerning", "magnitude": 1.0},
+        {"name": "Silence", "magnitude": 70.0},
+        {"name": "Magicka Fortification", "magnitude": 4.5},
+        {"name": "Fortify Conjuration", "magnitude": 3.0}
+      ]
+    },
+    {
+      "name": "Bristleback Heart",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Drain Intelligence", "magnitude": 2.7},
+        {"name": "Damage Stamina", "magnitude": 10.0},
+        {"name": "Fortify Smithing", "magnitude": 1.2},
+        {"name": "Thrill", "magnitude": 5.0}
+      ]
+    },
+    {
+      "name": "Eye of Bristleback",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Stamina Regeneration", "magnitude": 6.0},
+        {"name": "Magic Aversion", "magnitude": 3.6},
+        {"name": "Exploit Weakness", "magnitude": 10.0},
+        {"name": "Hircine's Sight", "magnitude": 10.0}
+      ]
+    },
+    {
+      "name": "Polished Bristleback Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Speed", "magnitude": 1.5},
+        {"name": "Cure Poison", "magnitude": 1.0},
+        {"name": "Resist Shock", "magnitude": 0.55},
+        {"name": "Poison Aversion", "magnitude": 1.17}
+      ]
+    },
+    {
+      "name": "Oil of Vitriol",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Damage Health", "magnitude": 6.95},
+        {"name": "Lingering Damage Health", "magnitude": 0.4},
+        {"name": "Ravage Health", "magnitude": 6.26},
+        {"name": "Poison Aversion", "magnitude": 3.02}
+      ]
+    },
+    {
+      "name": "Panacea",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Cure Disease", "magnitude": 1.0},
+        {"name": "Health", "magnitude": 8.33},
+        {"name": "Stamina", "magnitude": 8.33},
+        {"name": "Magicka", "magnitude": 8.33}
+      ]
+    },
+    {
+      "name": "Polished Goat Eye",
+      "modsrc": "hunterborn",
+      "effects": [
+        {"name": "Poison Aversion", "magnitude": 3.3},
+        {"name": "Lingering Damage Health", "magnitude": 0.4},
+        {"name": "Ineptitude", "magnitude": 10.0},
+        {"name": "Damage Stamina", "magnitude": 9.0}
+      ]
+    }
+  ]
+}
