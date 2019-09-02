@@ -6,14 +6,15 @@ function loadIngredientJsonData(path, callback)
   
   xobj.onreadystatechange = function() {
     if(xobj.readyState == 4 && xobj.status == "200")
-      callback(xobj.responseText)
+      callback(xobj.responseText);
   };
   
   xobj.send(null);
 }
 
-const ingredientDataPath = "../json/caco-ingredients.json";
+const ingredientDataPath = "https://dhildebr.github.io/caco-potion-builder/caco-ingredients.json";
 let ingredientDataJson = null;
+
 loadIngredientJsonData(function(response) {
   ingredientDataJson = JSON.parse(response);
 });
