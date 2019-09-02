@@ -60,7 +60,7 @@ div#searchbars
     &:active
     {
       background: $color-searchbar-background-focus;
-      outline: 0;
+      outline: none;
     }
   }
   
@@ -111,7 +111,7 @@ div#searchbars
     &:active
     {
       background: $color-searchbar-background-focus;
-      outline: 0;
+      outline: none;
     }
   }
 }
