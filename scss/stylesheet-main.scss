@@ -3,6 +3,7 @@
 @import "breakpoints";
 
 @import "searchbars";
+@import "checkboxes";
 
 body
 {
@@ -80,4 +81,11 @@ main
   
   @include when-under-breakpoint($breakpoint-foxtrot)
   { padding-top: 12pt; padding-bottom: 18pt; padding-left: 4pt; padding-right: 4pt; }
+}
+
+section#search-parameters
+{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }

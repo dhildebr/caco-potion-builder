@@ -1,18 +1,12 @@
 @import "colors";
-@iport "breakpoints";
+@import "breakpoints";
 
 div#searchbars
 {
   display: block;
-  width: 75%;
   
-  margin:
-  {
-    top: 0;
-    bottom: 0;
-    left: auto;
-    right: auto;
-  }
+  width: 75%;
+  margin-bottom: 12pt;
   
   input#ingredient-search-field
   {
@@ -24,8 +18,8 @@ div#searchbars
     border-top-right-radius: 4pt;
     margin: 0;
     
-    background: $color-searchbar-background;
-    color: $color-searchbar-text;
+    background: $color-form-background;
+    color: $color-form-text;
     
     cursor: text;
     appearance: none;
@@ -34,10 +28,10 @@ div#searchbars
     
     border:
     {
-      top: 1px dotted $color-searchbar-border;
-      bottom: 1px dotted $color-searchbar-border;
-      left: 1px dotted $color-searchbar-border;
-      right: 1px dotted $color-searchbar-border;
+      top: 1px solid $color-form-border;
+      bottom: 1px solid $color-form-border;
+      left: 1px solid $color-form-border;
+      right: 1px solid $color-form-border;
     }
     
     padding:
@@ -59,7 +53,7 @@ div#searchbars
     &:hover,
     &:active
     {
-      background: $color-searchbar-background-focus;
+      background: $color-form-background-focus;
       outline: none;
     }
   }
@@ -71,8 +65,8 @@ div#searchbars
     width: 25%;
     margin: 0;
     
-    background: $color-searchbar-background;
-    color: $color-searchbar-text;
+    background: $color-form-background;
+    color: $color-form-text;
     
     cursor: pointer;
     appearance: none;
@@ -82,9 +76,9 @@ div#searchbars
     border:
     {
       top: 0;
-      bottom: 1px dotted $color-searchbar-border;
-      left: 1px dotted $color-searchbar-border;
-      right: 1px dotted $color-searchbar-border;
+      bottom: 1px solid $color-form-border;
+      left: 1px solid $color-form-border;
+      right: 1px solid $color-form-border;
     }
     
     padding:
@@ -110,7 +104,7 @@ div#searchbars
     &:hover,
     &:active
     {
-      background: $color-searchbar-background-focus;
+      background: $color-form-background-focus;
       outline: none;
     }
     

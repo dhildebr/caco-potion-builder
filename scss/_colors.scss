@@ -3,16 +3,16 @@
   --color-background: #52CC52;
   --color-foreground: #E6CF8A;
   
-  --color-searchbar-background: #FFF2CC;
-  --color-searchbar-background-focus: #FFF9E6;
-  --color-searchbar-border: #338033;
-  --color-searchbar-text: #000000;
+  --color-form-background: #FFF2CC;
+  --color-form-background-focus: #FFF9E6;
+  --color-form-border: #338033;
+  --color-form-text: #000000;
 }
 
 $color-background: var(--color-background);
 $color-foreground: var(--color-foreground);
 
-$color-searchbar-background: var(--color-searchbar-background);
-$color-searchbar-background-focus: var(--color-searchbar-background-focus);
-$color-searchbar-border: var(--color-searchbar-border);
-$color-searchbar-text: var(--color-searchbar-text);
+$color-form-background: var(--color-form-background);
+$color-form-background-focus: var(--color-form-background-focus);
+$color-form-border: var(--color-form-border);
+$color-form-text: var(--color-form-text);
