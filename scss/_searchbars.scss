@@ -1,5 +1,5 @@
 @import "colors";
-@import "fonts";
+@iport "breakpoints";
 
 div#searchbars
 {
@@ -50,7 +50,7 @@ div#searchbars
     
     font:
     {
-      family: $font-chain-searchbars;
+      family: "Arbutus Slab", serif;
       weight: 400;
       size: 12pt;
     }
@@ -97,14 +97,14 @@ div#searchbars
     
     font:
     {
-      family: $font-chain-searchbars;
+      family: "Arbutus Slab", serif;
       weight: 400;
       size: 12pt;
     }
     
+    &:not(:first-of-type) { border-left-width: 0; }
     &:first-of-type { border-bottom-left-radius: 4pt; }
     &:last-of-type { border-bottom-right-radius: 4pt; }
-    &:not(:first-of-type) { border-left: 0; }
     
     &:focus,
     &:hover,
@@ -113,5 +113,20 @@ div#searchbars
       background: $color-searchbar-background-focus;
       outline: none;
     }
+    
+    @include when-under-breakpoint($breakpoint-foxtrot)
+    {
+      width: 50%;
+      
+      &:not(:first-of-type) { border-left-width: 1px; }
+      &:first-of-type { border-bottom-left-radius: 0; }
+      
+      &:nth-of-type(2n) { border-left-width: 0; }
+      &:nth-last-of-type(2) { border-bottom-left-radius: 4pt; }
+    }
   }
+  
+  @include when-under-breakpoint($breakpoint-bravo) { width: 80%; }
+  @include when-under-breakpoint($breakpoint-charlie) { width: 90%; }
+  @include when-under-breakpoint($breakpoint-delta) { width: 100%; }
 }

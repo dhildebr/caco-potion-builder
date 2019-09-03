@@ -1,5 +1,6 @@
 @import "html5";
 @import "colors";
+@import "breakpoints";
 
 @import "searchbars";
 
@@ -42,12 +43,14 @@ header
 
 main
 {
-  background: $color-foreground;
+  display: block;
+  box-sizing: border-box;
   
   width: 100%;
-  max-width: 1600px;
+  max-width: $breakpoint-alpha;
   min-height: 50vh;
   
+  background: $color-foreground;
   border-radius: 12pt;
   
   padding:
@@ -65,4 +68,16 @@ main
     left: 0;
     right: 0;
   }
+  
+  @include when-under-breakpoint($breakpoint-alpha)
+  { border-radius: 0; }
+  
+  @include when-under-breakpoint($breakpoint-charlie)
+  { padding-left: 8pt; padding-right: 8pt; }
+  
+  @include when-under-breakpoint($breakpoint-delta)
+  { padding-top: 18pt; padding-bottom: 27pt; }
+  
+  @include when-under-breakpoint($breakpoint-foxtrot)
+  { padding-top: 12pt; padding-bottom: 18pt; padding-left: 4pt; padding-right: 4pt; }
 }
