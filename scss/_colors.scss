@@ -1,14 +1,16 @@
 :root
 {
+  --color-main-title: #0F260F;
   --color-background: #52CC52;
   --color-foreground: #E6CF8A;
   
   --color-form-background: #FFF2CC;
   --color-form-background-focus: #FFF9E6;
   --color-form-border: #338033;
-  --color-form-text: #000000;
+  --color-form-text: #0F260F;
 }
 
+$color-main-title: var(--color-main-title);
 $color-background: var(--color-background);
 $color-foreground: var(--color-foreground);
 

@@ -23,21 +23,46 @@ header
   &>h1
   {
     width: 100%;
+    border: 0;
     padding: 0;
+    
+    color: $color-main-title;
+    text-align: center;
     
     font:
     {
-      family: "Times New Roman", serif;
+      family: "Cinzel Decorative", serif;
       weight: 700;
       size: 36pt;
     }
     
     margin:
     {
-      top: 5vh;
-      bottom: 10vh;
+      top: 24pt;
+      bottom: 32pt;
       left: 0;
       right: 0;
+    }
+    
+    @include when-under-breakpoint($breakpoint-foxtrot)
+    {
+      font-size: 32pt;
+      margin-top: 22pt;
+      margin-bottom: 30pt;
+    }
+    
+    @include when-under-breakpoint($breakpoint-golf)
+    {
+      font-size: 28pt;
+      margin-top: 20pt;
+      margin-bottom: 28pt;
+    }
+    
+    @include when-under-breakpoint($breakpoint-hotel)
+    {
+      font-size: 24pt;
+      margin-top: 18pt;
+      margin-bottom: 24pt;
     }
   }
 }

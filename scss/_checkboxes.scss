@@ -21,6 +21,9 @@ div#extra-mods-toggles
       position: absolute;
       clip: rect(0 0 0 0);
       
+      width: 16pt;
+      height: 16pt;
+      
       border: 0;
       padding: 0;
       margin: 0;
@@ -38,6 +41,7 @@ div#extra-mods-toggles
       padding-left: 20pt;
       
       color: $color-form-text;
+      cursor: text;
       
       font:
       {
@@ -62,6 +66,8 @@ div#extra-mods-toggles
         background: $color-form-background;
         border: 1pt solid $color-form-border;
         border-radius: 4pt;
+        
+        cursor: pointer;
       }
       
       &::after
@@ -79,6 +85,8 @@ div#extra-mods-toggles
         
         background: $color-form-border;
         border-radius: 2pt;
+        
+        cursor: pointer;
       }
     }
     
