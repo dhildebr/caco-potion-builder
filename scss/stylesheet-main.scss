@@ -5,6 +5,7 @@
 
 @import "searchbars";
 @import "checkboxes";
+@import "search-results";
 
 body
 {
@@ -75,7 +76,6 @@ main
   
   width: 100%;
   max-width: $breakpoint-alpha;
-  min-height: 50vh;
   
   background: $color-foreground;
   border-radius: 12pt;
@@ -109,9 +109,13 @@ main
   { padding-top: 12pt; padding-bottom: 18pt; padding-left: 4pt; padding-right: 4pt; }
 }
 
-section#search-parameters
+section#search-parameters,
+section#search-results
 {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
+
+section:not(:last-of-type)
+{ margin-bottom: 5vh; }
