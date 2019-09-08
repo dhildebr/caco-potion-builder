@@ -59,7 +59,7 @@ requestJsonData(ingredientDataPath, function(response) {
     let optionsList = new DocumentFragment();
     let emptyItem = document.createElement("option");
     emptyItem.setAttribute("value", "null");
-    emptyItem.textContent = "--";
+    emptyItem.textContent = "Select an effect\u{2026}";
     optionsList.appendChild(emptyItem);
     
     ingredientData.effects.forEach(function(effect) {

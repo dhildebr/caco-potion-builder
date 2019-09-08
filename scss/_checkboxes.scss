@@ -42,7 +42,7 @@ div#extra-mods-toggles
       padding-left: 20pt;
       
       color: $color-form-text;
-      cursor: arrow;
+      cursor: default;
       
       @include user-select(none);
       
@@ -96,7 +96,8 @@ div#extra-mods-toggles
     &>input[type="checkbox"]+label::after
     { content: none; }
     
-    &>input[type="checkbox"]:checked+label::after
+    &>input[type="checkbox"]:checked+label::after,
+    &>input[type="checkbox"]:hover+label::after
     { content: ""; }
     
     &>input[type="checkbox"]:focus+label::before,
