@@ -49,7 +49,7 @@ function compareIngredients(leftIngr, rightIngr)
  * PARAM jsonData: the JSON object containing all the ingredient data
  * PARAM debug: whether to print debugging info
  */
-function runIngredientDataBookkeeping(jsonData, debug = false)
+function runIngredientDataBookkeeping(jsonData, debug)
 {
   jsonData.effects.sort();
   jsonData.ingredients.sort(compareIngredients);
@@ -61,20 +61,37 @@ function runIngredientDataBookkeeping(jsonData, debug = false)
       let isEffectUsed = false;
       jsonData.ingredients.forEach(function(ingr) {
         ingr.effects.forEach(function(ingrEffect) {
-          if(ingrEffect.name == eff)
+          if(ingrEffect.name == eff) {
             isEffectUsed = true;
+            return;
+          }
         });
+        
+        if(isEffectUsed)
+          return;
       });
       
       if(!isEffectUsed)
         unusedEffects.push(eff);
     });
     
+    // Print out the unused effects
     unusedEffects.forEach(function(effectName) {
-      console.log(`Ingredient effect "${effectName}" is unused in ingredients list.`);
+      console.log(`Listed effect "${effectName}" is unused in ingredients list.`);
     });
     
     // Check for ingredients using unlisted effects
+    let unlistedEffects = new Set();
+    jsonData.ingredients.forEach(function(ingr) {
+      ingr.effects.forEach(function(ingrEffect) {
+        if(jsonData.effects.indexOf(ingrEffect.name) < 0)
+          unlistedEffects.add(ingrEffect.name);
+      });
+    });
     
+    // Print out the unlisted effects
+    unlistedEffects.forEach(function(effectName) {
+    console.log(`Ingredient effect "${effectName}" is unlisted in effects pool.`);
+    });
   }
 }
