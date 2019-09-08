@@ -1,5 +1,6 @@
 @import "colors";
 @import "breakpoints";
+@import "prefix-mixins";
 
 div#extra-mods-toggles
 {
@@ -42,6 +43,8 @@ div#extra-mods-toggles
       
       color: $color-form-text;
       cursor: text;
+      
+      @include user-select(none);
       
       font:
       {

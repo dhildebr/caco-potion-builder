@@ -1,5 +1,6 @@
 @import "colors";
 @import "breakpoints";
+@import "prefix-mixins";
 
 div#searchbars
 {
@@ -22,9 +23,7 @@ div#searchbars
     color: $color-form-text;
     
     cursor: text;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    @include appearance(none);
     
     border:
     {
@@ -69,9 +68,7 @@ div#searchbars
     color: $color-form-text;
     
     cursor: pointer;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    @include appearance(none);
     
     border:
     {
