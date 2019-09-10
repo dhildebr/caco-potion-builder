@@ -135,5 +135,31 @@ function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters
       matchingIngredients.push(ingr);
   });
   
-  console.log(matchingIngredients);
+  // Add a new tile to the results area for each match
+  if(matchingIngredients.length > 0) {
+    let results = new DocumentFragment();
+    matchingIngredients.forEach(function(ingr) {
+      let resultContainer = document.createElement("div");
+      resultContainer.classList.add("ingredient-search-result");
+      results.appendChild(resultContainer);
+      
+      let resultName = document.createElement("div");
+      resultName.classList.add("result-name");
+      resultName.textContent = ingr.name;
+      resultContainer.appendChild(resultName);
+      
+      let resultEffects = [
+        document.createElement("div"), document.createElement("div"),
+        document.createElement("div"), document.createElement("div")];
+      resultEffects.forEach(function(rslt, index) {
+        rslt.classList.add("result-effect");
+        rslt.textContent = ingr.effects[index].name;
+        resultContainer.appendChild(rslt);
+      });
+      
+      results.appendChild(resultContainer);
+    });
+    
+    resultsParent.appendChild(results);
+  }
 }

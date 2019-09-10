@@ -5,7 +5,6 @@ div#ingredient-search-results
 {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
   align-content: flex-start;
   
   width: 100%;
@@ -18,13 +17,16 @@ div#ingredient-search-results
   padding: 4pt;
   margin: 0;
   
-  overflow: hidden;
+  overflow-y: scroll;
   
   div.ingredient-search-result
   {
-    display: inline-block;
-    box-sizing: border-box;
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
     
+    box-sizing: border-box;
     width: calc(25% - 4pt);
     padding: 2pt;
     margin: 2pt;
@@ -41,6 +43,7 @@ div#ingredient-search-results
       margin-bottom: 4pt;
       
       color: $color-results-text;
+      text-align: left;
       
       font:
       {
@@ -54,10 +57,11 @@ div#ingredient-search-results
     {
       display: inline-block;
       
-      width: 50%;
-      margin-bottom: 2pt;
+      width: calc(50% - 4pt);
+      margin: 2pt;
       
       color: $color-results-text;
+      text-align: left;
       
       font:
       {
