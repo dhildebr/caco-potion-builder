@@ -1,0 +1,28 @@
+@import "colors";
+@import "breakpoints";
+
+p
+{
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  
+  color: $color-body-text;
+  text-align: left;
+  
+  font:
+  {
+    family: "Montserrat", sans-serif;
+    weight: 500;
+    size: 12pt;
+  }
+  
+  &:not(:last-of-type)
+  { margin-bottom: 8pt; }
+  
+  @include when-under-breakpoint($breakpoint-charlie)
+  { width: 80%; }
+  
+  @include when-under-breakpoint($breakpoint-delta)
+  { width: 100%; }
+}

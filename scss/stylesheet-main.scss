@@ -3,6 +3,7 @@
 @import "breakpoints";
 @import "prefix-mixins";
 
+@import "introduction";
 @import "searchbars";
 @import "checkboxes";
 @import "search-results";
@@ -109,13 +110,13 @@ main
   { padding-top: 12pt; padding-bottom: 18pt; padding-left: 4pt; padding-right: 4pt; }
 }
 
-section#search-parameters,
-section#search-results
+
+section
 {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  
+  &:not(:last-of-type)
+  { margin-bottom: 5vh; }
 }
-
-section:not(:last-of-type)
-{ margin-bottom: 5vh; }
