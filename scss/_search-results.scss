@@ -1,4 +1,5 @@
 @import "colors";
+@import "breakpoints";
 
 div#ingredient-search-results
 {
@@ -10,16 +11,64 @@ div#ingredient-search-results
   width: 100%;
   height: 50vh;
   
-  background: $color-form-background;
-  border: 1px solid $color-form-border;
+  background: $color-results-background;
+  border: 1px solid $color-results-border;
   border-radius: 4pt;
   
   padding: 4pt;
   margin: 0;
   
+  overflow: hidden;
+  
   div.ingredient-search-result
   {
     display: inline-block;
-    font-size: 12pt;
+    box-sizing: border-box;
+    
+    width: calc(25% - 4pt);
+    padding: 2pt;
+    margin: 2pt;
+    
+    background: $color-results-item;
+    border: 2px solid $color-results-border;
+    border-radius: 4pt;
+    
+    &>div.result-name
+    {
+      display: block;
+      
+      width: 100%;
+      margin-bottom: 4pt;
+      
+      color: $color-results-text;
+      
+      font:
+      {
+        family: "Merienda", serif;
+        weight: 400;
+        size: 16pt;
+      }
+    }
+    
+    &>div.result-effect
+    {
+      display: inline-block;
+      
+      width: 50%;
+      margin-bottom: 2pt;
+      
+      color: $color-results-text;
+      
+      font:
+      {
+        family: "Montserrat", sans-serif;
+        weight: 500;
+        style: italic;
+        size: 12pt;
+      }
+    }
+    
+    @include when-under-breakpoint($breakpoint-alpha)
+    { width: calc((100% / 3) - 4pt); }
   }
 }
