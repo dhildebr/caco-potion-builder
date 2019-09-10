@@ -157,9 +157,20 @@ function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters
         resultContainer.appendChild(rslt);
       });
       
+      resultsParent.style.justifyContent = "flex-start";
       results.appendChild(resultContainer);
     });
     
     resultsParent.appendChild(results);
+  }
+  else {
+    const emoticons = [
+      ":(", ":c", ":'c", "XD", "-.-",
+      "\u{AF}\\_(\u{30C4})_/\u{AF}", "\u{0CA0}_\u{0CA0}",
+      "(\u{256F}\u{00B0}\u{25A1}\u{00B0})\u{256F} \u{FE35} \u{253B}\u{2501}\u{253B}"];
+    const randomEmote = emoticons[Math.floor(Math.random() * emoticons.length)];
+    
+    resultsParent.style.justifyContent = "center";
+    resultsParent.textContent = `No results found ${randomEmote}`;
   }
 }
