@@ -1,8 +1,11 @@
-// The path to the all-important ingredient data JSON document
-const ingredientDataPath = "https://dhildebr.github.io/caco-potion-builder/caco-ingredients.json";
+//********************************************************************************************************************//
+//**                                           Global settings constants                                            **//
+//********************************************************************************************************************//
+// SETTING ingredientDataPath: the path to the all-important ingredient data JSON document
+// SETTING debugJson: whether to print debug info on mismatched effects, etc.
 
-// Whether to print debug info on mismatched effects, etc.
-const debugJson = true;
+const ingredientDataPath = "https://dhildebr.github.io/caco-potion-builder/caco-ingredients.json";
+const debugJson = false;
 
 //********************************************************************************************************************//
 
@@ -33,14 +36,15 @@ function requestJsonData(url, callback)
 
 requestJsonData(ingredientDataPath, function(response) {
   let ingredientData = JSON.parse(response);
+  
   let searchbar = document.getElementById("ingredient-search-field");
   let searchbarSuggestions = document.getElementById("ingredient-search-suggestions");
   let effectFilters = [
     document.getElementById("ingredient-effects-dropdown-01"),
     document.getElementById("ingredient-effects-dropdown-02"),
     document.getElementById("ingredient-effects-dropdown-03"),
-    document.getElementById("ingredient-effects-dropdown-04"),
-  ];
+    document.getElementById("ingredient-effects-dropdown-04")];
+  let resultsParent = document.getElementById("ingredient-search-results")
   
   runIngredientDataBookkeeping(ingredientData, debugJson);
   
@@ -70,5 +74,16 @@ requestJsonData(ingredientDataPath, function(response) {
     });
     
     dropdown.appendChild(optionsList);
+  });
+  
+  searchbar.addEventListener("keyup", function(evt) {
+    if(evt.key == "Enter")
+      populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters);
+  });
+  
+  effectFilters.forEach(function(dropdown) {
+    dropdown.addEventListener("change", function(evt) {
+      populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters);
+    });
   });
 });

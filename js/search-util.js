@@ -95,3 +95,45 @@ function runIngredientDataBookkeeping(jsonData, debug)
     });
   }
 }
+
+/*
+ * Populates the results field with ingredients matching the name and effect
+ * filters entered. If no filters of any kind are entered, all ingredients will
+ * be returned indiscriminately.
+ */
+function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters)
+{
+  resultsParent.innerHTML = "";
+  let matchingIngredients = [];
+  
+  // Build a list of all matching ingredients
+  jsonData.ingredients.forEach(function(ingr) {
+    let ingrMatches = true;
+    
+    // Only include results whose name contains the searchbar string
+    if(searchbar.value.trim().length > 0 && !ingr.name.toLowerCase().includes(searchbar.value.toLowerCase()))
+      ingrMatches = false;
+    
+    // Filter for effects, if any are selected
+    for(let i = 0, n = Math.min(ingr.effects.length, effectFilters.length); i < n; ++i) {
+      // Skip effect filter if nothing is selected
+      if(effectFilters[i].value == "null")
+        continue;
+      
+      // Otherwise, find any match for the effect filter
+      let ingrHasEffect = false;
+      ingr.effects.forEach(function(ingrEffect) {
+        if(ingrEffect.name == effectFilters[i].value)
+          ingrHasEffect = true;
+      });
+      
+      // Discard the match if no effects match the filter
+      ingrMatches = ingrMatches && ingrHasEffect;
+    }
+    
+    if(ingrMatches)
+      matchingIngredients.push(ingr);
+  });
+  
+  console.log(matchingIngredients);
+}
