@@ -6,6 +6,7 @@ $breakpoint-echo:    960px;
 $breakpoint-foxtrot: 800px;
 $breakpoint-golf:    720px;
 $breakpoint-hotel:   600px;
+$breakpoint-india:   480px;
 
 @mixin when-under-breakpoint($breakpoint)
 { @media only screen and (max-width: $breakpoint) { @content; } }

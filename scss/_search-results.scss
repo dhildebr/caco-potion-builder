@@ -33,7 +33,7 @@ div#ingredient-search-results
     align-content: flex-start;
     
     box-sizing: border-box;
-    width: calc(25% - 4pt);
+    width: calc((100% / 3) - 4pt);
     padding: 2pt;
     margin: 2pt;
     
@@ -46,7 +46,7 @@ div#ingredient-search-results
       display: block;
       
       width: 100%;
-      margin-bottom: 4pt;
+      padding: 0;
       
       color: $color-results-text;
       text-align: left;
@@ -56,6 +56,14 @@ div#ingredient-search-results
         family: "Merienda", serif;
         weight: 400;
         size: 16pt;
+      }
+      
+      margin:
+      {
+        top: 0;
+        bottom: 4pt;
+        left: 4pt;
+        right: 4pt;
       }
     }
     
@@ -69,6 +77,10 @@ div#ingredient-search-results
       color: $color-results-text;
       text-align: left;
       
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      
       font:
       {
         family: "Montserrat", sans-serif;
@@ -76,9 +88,19 @@ div#ingredient-search-results
         style: italic;
         size: 12pt;
       }
+      
+      @include when-under-breakpoint($breakpoint-india)
+      {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
     
-    @include when-under-breakpoint($breakpoint-alpha)
-    { width: calc((100% / 3) - 4pt); }
+    @include when-under-breakpoint($breakpoint-bravo)
+    { width: calc(50% - 4pt); }
+    
+    @include when-under-breakpoint($breakpoint-echo)
+    { width: calc(100% - 4pt); }
   }
 }
