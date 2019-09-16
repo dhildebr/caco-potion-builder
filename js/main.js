@@ -44,7 +44,10 @@ requestJsonData(ingredientDataPath, function(response) {
     document.getElementById("ingredient-effects-dropdown-02"),
     document.getElementById("ingredient-effects-dropdown-03"),
     document.getElementById("ingredient-effects-dropdown-04")];
-  let resultsParent = document.getElementById("ingredient-search-results")
+  let modsrcToggles = [
+    document.getElementById("show-bruma-ingredients"),
+    document.getElementById("show-hunterborn-ingredients")];
+  let resultsParent = document.getElementById("ingredient-search-results");
   
   runIngredientDataBookkeeping(ingredientData, debugJson);
   
@@ -78,12 +81,18 @@ requestJsonData(ingredientDataPath, function(response) {
   
   searchbar.addEventListener("keyup", function(evt) {
     if(evt.key == "Enter")
-      populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters);
+      populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters, modsrcToggles);
   });
   
   effectFilters.forEach(function(dropdown) {
     dropdown.addEventListener("change", function(evt) {
-      populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters);
+      populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters, modsrcToggles);
+    });
+  });
+  
+  modsrcToggles.forEach(function (toggle) {
+    toggle.addEventListener("change", function(evt) {
+      populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters, modsrcToggles);
     });
   });
 });

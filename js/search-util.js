@@ -100,11 +100,23 @@ function runIngredientDataBookkeeping(jsonData, debug)
  * Populates the results field with ingredients matching the name and effect
  * filters entered. If no filters of any kind are entered, all ingredients will
  * be returned indiscriminately.
+ * 
+ * PARAM jsonData: a reference back to the ingredient JSON object
+ * PARAM resultsParent: the HTML element into which result tiles are inserted
+ * PARAM searchbar: the name search text input, used in filtering results
+ * PARAM effectFilters: an array of <select> elements for filtering by effect
+ * PARAM modsrcToggles: an array of checkbox elements for filtering by mod source
  */
-function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters)
+function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters, modsrcToggles)
 {
   resultsParent.innerHTML = "";
   let matchingIngredients = [];
+  
+  let acceptedModSources = ["vanilla", "caco"];
+  modsrcToggles.forEach(function(srcCheckbox) {
+    if(srcCheckbox.checked)
+      acceptedModSources.push(srcCheckbox.dataset.modsrc);
+  });
   
   // Build a list of all matching ingredients
   jsonData.ingredients.forEach(function(ingr) {
@@ -130,6 +142,16 @@ function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters
       // Discard the match if no effects match the filter
       ingrMatches = ingrMatches && ingrHasEffect;
     }
+    
+    // Filter based on mod source
+    let isSourceIncluded = false;
+    ingr.modsrc.split(",").forEach(function(src) {
+      if(acceptedModSources.includes(src)) {
+        isSourceIncluded = true;
+      }
+    });
+    
+    ingrMatches = ingrMatches && isSourceIncluded;
     
     if(ingrMatches)
       matchingIngredients.push(ingr);
