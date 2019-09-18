@@ -42,8 +42,9 @@ div#extra-mods-toggles
       padding-left: 20pt;
       
       color: $color-form-text;
-      cursor: default;
+      line-height: 150%;
       
+      cursor: default;
       @include user-select(none);
       
       font:
