@@ -1,0 +1,63 @@
+@import "colors";
+@import "breakpoints";
+@import "prefix-mixins";
+
+div#brewing-preview-wrapper
+{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  
+  svg#brewing-preview-icon
+  {
+    margin-right: 18pt;
+    @include user-select(none);
+    
+    #brewing-preview-icon-main-group
+    { fill: $color-body-text; }
+    
+    @include when-under-breakpoint($breakpoint-golf)
+    { display: none; }
+  }
+  
+  &>div#brewing-preview-info
+  {
+    &>div#brewing-preview-potion-name
+    {
+      margin-bottom: 6pt;
+      
+      color: $color-body-text;
+      
+      font:
+      {
+        family: "Merienda", serif;
+        weight: 400;
+        size: 16pt;
+      }
+    }
+    
+    &>ul#brewing-preview-potion-effects
+    {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      
+      &>li.brewing-preview-effect-name
+      {
+        padding-left: 0;
+        margin-left: 6pt;
+        
+        color: $color-body-text;
+        list-style: inside "\27A2";
+        
+        font:
+        {
+          family: "Montserrat", sans-serif;
+          weight: 500;
+          style: italic;
+          size: 12pt;
+        }
+      }
+    }
+  }
+}

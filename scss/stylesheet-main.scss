@@ -4,6 +4,7 @@
 @import "prefix-mixins";
 
 @import "introduction";
+@import "brewing-preview";
 @import "searchbars";
 @import "checkboxes";
 @import "search-results";
@@ -117,6 +118,6 @@ section
   flex-flow: column nowrap;
   align-items: center;
   
-  &:not(:last-of-type)
-  { margin-bottom: 36pt; }
+  &:not(:first-of-type) { padding-top: 12pt; }
+  &:not(:last-of-type) { padding-bottom: 24pt; }
 }
