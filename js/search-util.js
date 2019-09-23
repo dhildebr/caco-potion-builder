@@ -8,7 +8,7 @@
  * 
  * PARAM leftIngr: the first compared ingredient
  * PARAM rightIngr: the second compared ingredient
- * RETURN -1 if the left ingredient comes before the second, 1 if the reverse if
+ * RETURN -1 if the left ingredient comes before the second, 1 if the reverse is
  * true, or 0 if they're equal
  */
 function compareIngredients(leftIngr, rightIngr)
@@ -176,6 +176,8 @@ function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters
       resultEffects.forEach(function(rslt, index) {
         rslt.classList.add("result-effect");
         rslt.textContent = ingr.effects[index].name;
+        rslt.setAttribute("data-name", ingr.effects[index].name);
+        rslt.setAttribute("data-magnitude", ingr.effects[index].magnitude);
         resultContainer.appendChild(rslt);
       });
       
@@ -195,4 +197,63 @@ function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters
     resultsParent.style.justifyContent = "center";
     resultsParent.textContent = `No results found ${randomEmote}`;
   }
+}
+
+/*
+ * Fills out the brewing preview with a list of all effects common to two or
+ * more of the ingredient ties provided. These will be divs with the class
+ * ingredient-search-result, with the expected name and effects child elements.
+ * 
+ * PARAM ingredients: a list of ingredients to mix
+ */
+function generateBrewingPreview(ingredients)
+{
+  let brewingPreviewParent = document.getElementById("brewing-preview-info");
+  let brewingPreviewElems = new DocumentFragment();
+  brewingPreviewParent.innerHTML = "";
+  
+  // Display instructions if too few/many ingredients are chosen
+  if(ingredients.length < 2 || ingredients.length > 3) {
+    let brewingInstructionsElem = document.createElement("div");
+    brewingInstructionsElem.classList.add("brewing-preview-instructions");
+    brewingInstructionsElem.textContent = "Select 2\u{2013}3 ingredients to preview the result";
+    brewingPreviewElems.appendChild(brewingInstructionsElem);
+  }
+  
+  // If 2/3 ingredients are chosen,  display their common effects
+  else {
+    
+  }
+  
+  // Add tags showing which ingredients have been added
+  ingredients.forEach(function(ingr) {
+    let ingrTag = document.createElement("li");
+    ingrTag.classList.add("brewing-preview-ingredient-tag");
+    ingrTag.textContent = ingr.querySelector("div.result-name").textContent;
+    brewingPreviewElems.appendChild(ingrTag);
+  });
+  
+  // Finalize all additions to the brewing preview
+  brewingPreviewParent.appendChild(brewingPreviewElems);
+}
+
+/*
+ * Adds the specified ingredient to the brewing preview, provided there are
+ * fewer than three ingredients there already.
+ * 
+ * PARAM ingredientTile: the tile element for the ingredient to be added
+ */
+function addIngredientToPreview(ingrTile)
+{
+  
+}
+
+/*
+ * Removes the specified ingredient from the brewing preview.
+ * 
+ * PARAM ingrTag: the tag element for the removed ingredient
+ */
+function removeIngredientFromPreview(ingrTag)
+{
+  
 }
