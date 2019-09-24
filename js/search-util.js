@@ -181,12 +181,18 @@ function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters
         resultContainer.appendChild(rslt);
       });
       
+      resultContainer.addEventListener("click", function(evt) {
+        addIngredientToPreview(resultContainer);
+      });
+      
       resultsParent.style.justifyContent = "flex-start";
       results.appendChild(resultContainer);
     });
     
     resultsParent.appendChild(results);
   }
+  
+  // If no matches are found, print a message with a sad little emoticon
   else {
     const emoticons = [
       ":(", ":c", ":'c", "XD", "-.-",
@@ -215,22 +221,42 @@ function generateBrewingPreview(ingredients)
   // Display instructions if too few/many ingredients are chosen
   if(ingredients.length < 2 || ingredients.length > 3) {
     let brewingInstructionsElem = document.createElement("div");
-    brewingInstructionsElem.classList.add("brewing-preview-instructions");
+    brewingInstructionsElem.id = "brewing-preview-instructions";
     brewingInstructionsElem.textContent = "Select 2\u{2013}3 ingredients to preview the result";
     brewingPreviewElems.appendChild(brewingInstructionsElem);
   }
   
-  // If 2/3 ingredients are chosen,  display their common effects
-  else {
+  // If 2/3 ingredients are chosen, display their common effects
+  /*else {
+    let sharedEffects = new Map();
+    let allEffects = new Map();
     
-  }
+    // Build a map of names and magnitudes, writing also into sharedEffects on the second and subsequent encounter
+    ingredients.forEach(function(ingr) {
+      ingr.querySelectorAll("div.result-effect").forEach(function(eff) {
+        if(!sharedEffectskeys().has(eff.dataset.name))
+          allEffects.set(eff.dataset.name, eff.dataset.magnitude);
+        else
+          allEffects.set(eff.dataset.name, Math.max(
+              eff.dataset.magnitude, sharedEffects.get(eff.dataset.name)));
+          sharedEffects.set(eff.dataset.name, allEffects.get(eff.dataset.name));
+      });
+    });
+    
+    
+  }*/
   
   // Add tags showing which ingredients have been added
+  let brewingTagsWrapper = document.createElement("ul");
+  brewingTagsWrapper.id = "brewing-preview-ingredient-tags";
+  brewingPreviewElems.appendChild(brewingTagsWrapper);
   ingredients.forEach(function(ingr) {
     let ingrTag = document.createElement("li");
-    ingrTag.classList.add("brewing-preview-ingredient-tag");
-    ingrTag.textContent = ingr.querySelector("div.result-name").textContent;
-    brewingPreviewElems.appendChild(ingrTag);
+    ingrTag.classList.add("brewing-preview-tag");
+    ingrTag.textContent = ingr.name;
+    ingrTag.setAttribute("data-name", ingr.name);
+    ingrTag.setAttribute("data-effects", JSON.stringify(ingr.effects));
+    brewingTagsWrapper.appendChild(ingrTag);
   });
   
   // Finalize all additions to the brewing preview
@@ -238,14 +264,41 @@ function generateBrewingPreview(ingredients)
 }
 
 /*
- * Adds the specified ingredient to the brewing preview, provided there are
- * fewer than three ingredients there already.
+ * Adds the specified ingredient to the brewing preview.
  * 
  * PARAM ingredientTile: the tile element for the ingredient to be added
  */
 function addIngredientToPreview(ingrTile)
 {
+  let brewingTagsWrapper = document.getElementById("brewing-preview-ingredient-tags");
+  let ingrTags = [];
   
+  // Push on any existing ingredient tags
+  if(brewingTagsWrapper != null) {
+    brewingTagsWrapper.querySelectorAll("li.brewing-preview-tag").forEach(function(tag) {
+      ingrTags.push({
+        name: tag.dataset.name,
+        effects: JSON.parse(tag.dataset.effects)
+      });
+    });
+  }
+  
+  // Add the new tag to the list
+  ingrTags.push({
+    name: ingrTile.querySelector("div.result-name").textContent,
+    effects: []
+  });
+  
+  // Fill out the effects on the new entry
+  ingrTile.querySelectorAll("div.result-effect").forEach(function(eff) {
+    ingrTags[ingrTags.length - 1].effects.push({
+      name: eff.dataset.name,
+      magnitude: eff.dataset.magnitude
+    });
+  });
+  
+  // Draw the brewing preview with the new data
+  generateBrewingPreview(ingrTags);
 }
 
 /*

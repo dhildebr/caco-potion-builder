@@ -14,7 +14,7 @@ div#brewing-preview-wrapper
     @include user-select(none);
     
     #brewing-preview-icon-main-group
-    { fill: $color-body-text; }
+    { fill: $color-brewing-text; }
     
     @include when-under-breakpoint($breakpoint-golf)
     { display: none; }
@@ -26,7 +26,7 @@ div#brewing-preview-wrapper
     {
       margin-bottom: 6pt;
       
-      color: $color-body-text;
+      color: $color-brewing-text;
       
       font:
       {
@@ -40,14 +40,20 @@ div#brewing-preview-wrapper
     {
       border: 0;
       padding: 0;
-      margin: 0;
+      
+      margin:
+      {
+        top: 0;
+        bottom: 8pt;
+        left: 0;
+        right: 0;
+      }
       
       &>li.brewing-preview-effect-name
       {
-        padding-left: 0;
         margin-left: 6pt;
         
-        color: $color-body-text;
+        color: $color-brewing-text;
         list-style: inside "\27A2";
         
         font:
@@ -56,6 +62,61 @@ div#brewing-preview-wrapper
           weight: 500;
           style: italic;
           size: 12pt;
+        }
+      }
+    }
+    
+    &>ul#brewing-preview-ingredient-tags
+    {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      
+      border: 0;
+      padding: 0;
+      margin: 0;
+      
+      &>li.brewing-preview-tag
+      {
+        display: inline-block;
+        
+        background: $color-brewing-background;
+        border: 1px solid $color-brewing-border;
+        border-radius: 4pt;
+        
+        color: $color-brewing-text;
+        text-transform: uppercase;
+        list-style: none;
+        
+        cursor: pointer;
+        
+        font:
+        {
+          family: "Montserrat", sans-serif;
+          weight: 500;
+          size: 10pt;
+        }
+        
+        padding:
+        {
+          top: 1pt;
+          bottom: 1pt;
+          left: 2pt;
+          right: 2pt;
+        }
+        
+        margin:
+        {
+          top: 2pt;
+          bottom: 2pt;
+          left: 2pt;
+          right: 2pt;
+        }
+        
+        &:focus,
+        &:hover
+        {
+          background: $color-brewing-background-focus;
         }
       }
     }

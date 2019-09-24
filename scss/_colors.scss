@@ -5,6 +5,11 @@
   --color-foreground: #E6CF8A;
   --color-body-text: #0F260F;
   
+  --color-brewing-background: #FFF2CC;
+  --color-brewing-background-focus: #FFF9E6;
+  --color-brewing-border: #338033;
+  --color-brewing-text: #0F260F;
+  
   --color-form-background: #FFF2CC;
   --color-form-background-focus: #FFF9E6;
   --color-form-border: #338033;
@@ -20,6 +25,11 @@ $color-main-title: var(--color-main-title);
 $color-background: var(--color-background);
 $color-foreground: var(--color-foreground);
 $color-body-text: var(--color-body-text);
+
+$color-brewing-background: var(--color-brewing-background);
+$color-brewing-background-focus: var(--color-brewing-background-focus);
+$color-brewing-border: var(--color-brewing-border);
+$color-brewing-text: var(--color-brewing-text);
 
 $color-form-background: var(--color-form-background);
 $color-form-background-focus: var(--color-form-background-focus);

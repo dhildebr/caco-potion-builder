@@ -95,4 +95,6 @@ requestJsonData(ingredientDataPath, function(response) {
       populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters, modsrcToggles);
     });
   });
+  
+  generateBrewingPreview([]);
 });
