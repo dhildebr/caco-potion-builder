@@ -218,12 +218,14 @@ function generateBrewingPreview(ingredients)
   let brewingPreviewElems = new DocumentFragment();
   brewingPreviewParent.innerHTML = "";
   
-  // Display instructions if too few/many ingredients are chosen
+  // Set up the instructions, content to be determined later
+  let brewingInstructionsElem = document.createElement("div");
+  brewingInstructionsElem.id = "brewing-preview-instructions";
+  brewingPreviewElems.appendChild(brewingInstructionsElem);
+  
+  // Display help text if too few/many ingredients are chosen
   if(ingredients.length < 2 || ingredients.length > 3) {
-    let brewingInstructionsElem = document.createElement("div");
-    brewingInstructionsElem.id = "brewing-preview-instructions";
     brewingInstructionsElem.textContent = "Select 2\u{2013}3 ingredients to preview the result";
-    brewingPreviewElems.appendChild(brewingInstructionsElem);
   }
   
   // If 2-3 ingredients are chosen, display their common effects
@@ -231,7 +233,7 @@ function generateBrewingPreview(ingredients)
     let allEffects = new Map();
     let bestEffects = new Map();
     
-    // Build a map of names and magnitudes, writing also into bestEffects on the second and subsequent encounter
+    // Build a map of names and magnitudes, writing also into bestEffects on the second and subsequent encounters
     ingredients.forEach(function(ingr) {
       ingr.effects.forEach(function(eff) {
         if(!allEffects.has(eff.name))
@@ -245,14 +247,30 @@ function generateBrewingPreview(ingredients)
       });
     });
     
-    console.log(bestEffects);
+    // Deterine instructions depending on whether matching effects were found
+    brewingInstructionsElem.textContent = (bestEffects.size > 0) ?
+      "Potion effects:" : "No matching effects" ;
     
+    // Build the list of matching effects
+    if(bestEffects.size > 0) {
+      let brewingEffectsList = document.createElement("ul");
+      brewingEffectsList.id = "brewing-preview-potion-effects";
+      bestEffects.forEach(function(effMag, effName) {
+        let matchingEffect = document.createElement("li");
+        matchingEffect.classList.add("brewing-preview-effect-name");
+        matchingEffect.textContent = effName;
+        matchingEffect.setAttribute("data-name", effName);
+        matchingEffect.setAttribute("data-magnitude", effMag);
+        brewingEffectsList.appendChild(matchingEffect);
+      });
+      
+      brewingPreviewElems.appendChild(brewingEffectsList);
+    }
   }
   
   // Add tags showing which ingredients have been added
   let brewingTagsWrapper = document.createElement("ul");
   brewingTagsWrapper.id = "brewing-preview-ingredient-tags";
-  brewingPreviewElems.appendChild(brewingTagsWrapper);
   ingredients.forEach(function(ingr) {
     let ingrTag = document.createElement("li");
     ingrTag.classList.add("brewing-preview-tag");
@@ -261,6 +279,8 @@ function generateBrewingPreview(ingredients)
     ingrTag.setAttribute("data-effects", JSON.stringify(ingr.effects));
     brewingTagsWrapper.appendChild(ingrTag);
   });
+  
+  brewingPreviewElems.appendChild(brewingTagsWrapper);
   
   // Finalize all additions to the brewing preview
   brewingPreviewParent.appendChild(brewingPreviewElems);
