@@ -79,9 +79,12 @@ requestJsonData(ingredientDataPath, function(response) {
     dropdown.appendChild(optionsList);
   });
   
+  let searchDelayTimeout = null;
   searchbar.addEventListener("keyup", function(evt) {
-    if(evt.key == "Enter")
+    clearTimeout(searchDelayTimeout);
+    searchDelayTimeout = setTimeout(function() {
       populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters, modsrcToggles);
+    }, 500);
   });
   
   effectFilters.forEach(function(dropdown) {
