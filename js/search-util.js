@@ -91,7 +91,7 @@ function runIngredientDataBookkeeping(jsonData, debug)
     
     // Print out the unlisted effects
     unlistedEffects.forEach(function(effectName) {
-    console.log(`Ingredient effect "${effectName}" is unlisted in effects pool.`);
+      console.log(`Ingredient effect "${effectName}" is unlisted in effects pool.`);
     });
   }
 }
@@ -226,25 +226,28 @@ function generateBrewingPreview(ingredients)
     brewingPreviewElems.appendChild(brewingInstructionsElem);
   }
   
-  // If 2/3 ingredients are chosen, display their common effects
-  /*else {
-    let sharedEffects = new Map();
+  // If 2-3 ingredients are chosen, display their common effects
+  else {
     let allEffects = new Map();
+    let bestEffects = new Map();
     
-    // Build a map of names and magnitudes, writing also into sharedEffects on the second and subsequent encounter
+    // Build a map of names and magnitudes, writing also into bestEffects on the second and subsequent encounter
     ingredients.forEach(function(ingr) {
-      ingr.querySelectorAll("div.result-effect").forEach(function(eff) {
-        if(!sharedEffectskeys().has(eff.dataset.name))
-          allEffects.set(eff.dataset.name, eff.dataset.magnitude);
-        else
-          allEffects.set(eff.dataset.name, Math.max(
-              eff.dataset.magnitude, sharedEffects.get(eff.dataset.name)));
-          sharedEffects.set(eff.dataset.name, allEffects.get(eff.dataset.name));
+      ingr.effects.forEach(function(eff) {
+        if(!allEffects.has(eff.name))
+          allEffects.set(eff.name, eff.magnitude);
+        else if(!bestEffects.has(ingr.name)) {
+          bestEffects.set(eff.name, eff.magnitude);
+        }
+        else if(eff.magnitude > bestEffects.get(eff.name).magnitude) {
+          bestEffects.get(eff.name).magnitude = eff.magnitude;
+        }
       });
     });
     
+    console.log(bestEffects);
     
-  }*/
+  }
   
   // Add tags showing which ingredients have been added
   let brewingTagsWrapper = document.createElement("ul");
