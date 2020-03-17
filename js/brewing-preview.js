@@ -48,12 +48,23 @@ function generateBrewingPreview(ingredients)
     if(bestEffects.size > 0) {
       let brewingEffectsList = document.createElement("ul");
       brewingEffectsList.id = "brewing-preview-potion-effects";
+      
+      // Convert bestEffects into an array of key-value objects for sorting
+      let matchingEffects = [];
       bestEffects.forEach(function(effMag, effName) {
+        matchingEffects.push({
+          "name": effName,
+          "magnitude": effMag
+        });
+      });
+      matchingEffects.sort(compareIngredientEffects);
+      
+      matchingEffects.forEach(function(eff) {
         let matchingEffect = document.createElement("li");
         matchingEffect.classList.add("brewing-preview-effect-name");
-        matchingEffect.textContent = effName;
-        matchingEffect.setAttribute("data-name", effName);
-        matchingEffect.setAttribute("data-magnitude", effMag);
+        matchingEffect.textContent = eff.name;
+        matchingEffect.setAttribute("data-name", eff.name);
+        matchingEffect.setAttribute("data-magnitude", eff.magnitude);
         brewingEffectsList.appendChild(matchingEffect);
       });
       

@@ -52,3 +52,23 @@ function compareIngredients(leftIngr, rightIngr)
   comp = strcmp(leftIngr.modsrc, rightIngr.modsrc);
   return comp;
 }
+
+/*
+ * A comparison function for sorting individual ingredient effects. Effects are
+ * sorted first based on their string property, "name", then by their numerical
+ * "magnitude" property.
+ * 
+ * PARAM leftEffect: the first effect being compared
+ * PARAM rightEffect: the second effect being compared
+ * RETURN -1 if the left effect comes first, 1 if the reverse is true, or 0 if
+ * they're equal
+ */
+function compareIngredientEffects(leftEffect, rightEffect)
+{
+  let comp = strcmp(leftEffect.name, rightEffect.name);
+  if(comp != 0) return comp;
+  
+  comp = leftEffect.magnitude - rightEffect.magnitude;
+  if(comp != 0) return (comp < 0) ? -1 : 1 ;
+  return 0;
+}
