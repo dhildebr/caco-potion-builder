@@ -51,10 +51,11 @@ div#brewing-preview-wrapper
       
       &>li.brewing-preview-effect-name
       {
+        padding-left: 4pt;
         margin-left: 6pt;
         
         color: $color-brewing-text;
-        list-style: inside "\27A2";
+        list-style: outside "\27A2";
         
         font:
         {
@@ -62,6 +63,16 @@ div#brewing-preview-wrapper
           weight: 500;
           style: italic;
           size: 12pt;
+        }
+        
+        &[data-name][data-magnitude]::after
+        {
+          content: "(" attr(data-magnitude) ")";
+          position: relative;
+          font-size: 0.83em;
+          vertical-align: super;
+          
+          margin-left: 4pt;
         }
       }
     }
