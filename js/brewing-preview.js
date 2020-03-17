@@ -110,19 +110,28 @@ function addIngredientToPreview(ingrTile)
     });
   }
   
-  // Add the new tag to the list
-  ingrTags.push({
-    name: ingrTile.querySelector("div.result-name").textContent,
-    effects: []
+  // Check to see if the new ingredient is already present
+  let isIngrDuplicate = false;
+  brewingTagsWrapper.querySelectorAll("li.brewing-preview-tag").forEach(function(tag) {
+    if(ingrTile.querySelector("div.result-name").textContent == tag.dataset.name)
+      isIngrDuplicate = true;
   });
   
-  // Fill out the effects on the new entry
-  ingrTile.querySelectorAll("div.result-effect").forEach(function(eff) {
-    ingrTags[ingrTags.length - 1].effects.push({
-      name: eff.dataset.name,
-      magnitude: eff.dataset.magnitude
+  // If the new ingredient is not a duplicate, then add it to the list
+  if(!isIngrDuplicate) {
+    ingrTags.push({
+      name: ingrTile.querySelector("div.result-name").textContent,
+      effects: []
     });
-  });
+    
+    // Fill out the effects on the new entry
+    ingrTile.querySelectorAll("div.result-effect").forEach(function(eff) {
+      ingrTags[ingrTags.length - 1].effects.push({
+        name: eff.dataset.name,
+        magnitude: eff.dataset.magnitude
+      });
+    });
+  }
   
   // Draw the brewing preview with the new data
   generateBrewingPreview(ingrTags);
