@@ -40,7 +40,7 @@ function generateBrewingPreview(ingredients)
       });
     });
     
-    // Deterine instructions depending on whether matching effects were found
+    // Determine instructions depending on whether matching effects were found
     brewingInstructionsElem.textContent = (bestEffects.size > 0) ?
       "Potion effects:" : "No matching effects" ;
     
@@ -53,8 +53,8 @@ function generateBrewingPreview(ingredients)
       let matchingEffects = [];
       bestEffects.forEach(function(effMag, effName) {
         matchingEffects.push({
-          "name": effName,
-          "magnitude": effMag
+          name: effName,
+          magnitude: effMag
         });
       });
       matchingEffects.sort(compareIngredientEffects);
@@ -91,7 +91,8 @@ function generateBrewingPreview(ingredients)
 }
 
 /*
- * Adds the specified ingredient to the brewing preview.
+ * Adds the specified ingredient to the brewing preview, given a search results
+ * tile element indicating it.
  * 
  * PARAM ingredientTile: the tile element for the ingredient to be added
  */
@@ -135,14 +136,50 @@ function addIngredientToPreview(ingrTile)
   
   // Draw the brewing preview with the new data
   generateBrewingPreview(ingrTags);
+  
+  // Rebuild the event listeners for clicking to remove tags
+  brewingTagsWrapper = document.getElementById("brewing-preview-ingredient-tags");
+  brewingTagsWrapper.querySelectorAll("li.brewing-preview-tag").forEach(function(tag) {
+    tag.addEventListener("click", function(evt) {
+      removeIngredientFromPreview(tag.dataset.name);
+    });
+  });
 }
 
 /*
- * Removes the specified ingredient from the brewing preview.
+ * Removes the specified ingredient from the brewing preview., given its name.
+ * The first ingredient tag with a matching name, if any, will be removed - and
+ * as duplicates cannot be inserted, this will be the only one.
  * 
- * PARAM ingrTag: the tag element for the removed ingredient
+ * PARAM ingrName: the name of the ingredient being removed
  */
-function removeIngredientFromPreview(ingrTag)
+function removeIngredientFromPreview(ingrName)
 {
+  let brewingTagsWrapper = document.getElementById("brewing-preview-ingredient-tags");
+  let ingrTags = [];
   
+  // Push on existing ingredient tags, minus any with the removed item's name
+  if(brewingTagsWrapper != null) {
+    brewingTagsWrapper.querySelectorAll("li.brewing-preview-tag").forEach(function(tag) {
+      if(tag.dataset.name != ingrName) {
+        ingrTags.push({
+          name: tag.dataset.name,
+          effects: JSON.parse(tag.dataset.effects)
+        });
+      }
+    });
+    
+    // Re-generate the brewing preview
+    generateBrewingPreview(ingrTags);
+    
+    // Rebuild the event listeners for clicking to remove tags
+    brewingTagsWrapper = document.getElementById("brewing-preview-ingredient-tags");
+    if(brewingTagsWrapper != null) {
+      brewingTagsWrapper.querySelectorAll("li.brewing-preview-tag").forEach(function(tag) {
+        tag.addEventListener("click", function(evt) {
+          removeIngredientFromPreview(tag.dataset.name);
+        });
+      });
+    }
+  }
 }
