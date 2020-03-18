@@ -4,7 +4,7 @@
 // SETTING ingredientDataPath: the path to the all-important ingredient data JSON document
 // SETTING debugJson: whether to print debug info on mismatched effects, etc.
 
-const ingredientDataPath = "https://dhildebr.github.io/caco-potion-builder/caco-ingredients.json";
+const ingredientDataPath = "https://dhildebr.github.io/caco-potion-builder/caco-ingredients.min.json";
 const debugJson = false;
 
 //********************************************************************************************************************//
