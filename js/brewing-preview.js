@@ -25,6 +25,7 @@ function generateBrewingPreview(ingredients)
   else {
     let allEffects = new Map();
     let bestEffects = new Map();
+    let bestPercentiles = new Map();
     
     // Build a map of names and magnitudes, writing also into bestEffects on the second and subsequent encounters
     ingredients.forEach(function(ingr) {
@@ -33,9 +34,11 @@ function generateBrewingPreview(ingredients)
           allEffects.set(eff.name, eff.magnitude);
         else if(!bestEffects.has(ingr.name)) {
           bestEffects.set(eff.name, eff.magnitude);
+          bestPercentiles.set(eff.name, eff.percentile);
         }
         else if(eff.magnitude > bestEffects.get(eff.name).magnitude) {
           bestEffects.get(eff.name).magnitude = eff.magnitude;
+          bestPercentiles.get(eff.name).percentile = eff.percentile;
         }
       });
     });
@@ -54,7 +57,8 @@ function generateBrewingPreview(ingredients)
       bestEffects.forEach(function(effMag, effName) {
         matchingEffects.push({
           name: effName,
-          magnitude: effMag
+          magnitude: effMag,
+          percentile: bestPercentiles.get(effName)
         });
       });
       matchingEffects.sort(compareIngredientEffects);
@@ -65,6 +69,7 @@ function generateBrewingPreview(ingredients)
         matchingEffect.textContent = eff.name;
         matchingEffect.setAttribute("data-name", eff.name);
         matchingEffect.setAttribute("data-magnitude", eff.magnitude);
+        matchingEffect.setAttribute("data-percentile", eff.percentile);
         brewingEffectsList.appendChild(matchingEffect);
       });
       
@@ -81,6 +86,7 @@ function generateBrewingPreview(ingredients)
     ingrTag.textContent = ingr.name;
     ingrTag.setAttribute("data-name", ingr.name);
     ingrTag.setAttribute("data-effects", JSON.stringify(ingr.effects));
+    ingrTag.setAttribute("data-percentile", ingr.percentile);
     brewingTagsWrapper.appendChild(ingrTag);
   });
   
@@ -106,7 +112,8 @@ function addIngredientToPreview(ingrTile)
     brewingTagsWrapper.querySelectorAll("li.brewing-preview-tag").forEach(function(tag) {
       ingrTags.push({
         name: tag.dataset.name,
-        effects: JSON.parse(tag.dataset.effects)
+        effects: JSON.parse(tag.dataset.effects),
+        percentile: tag.dataset.percentile
       });
     });
   }
@@ -129,7 +136,8 @@ function addIngredientToPreview(ingrTile)
     ingrTile.querySelectorAll("div.result-effect").forEach(function(eff) {
       ingrTags[ingrTags.length - 1].effects.push({
         name: eff.dataset.name,
-        magnitude: eff.dataset.magnitude
+        magnitude: eff.dataset.magnitude,
+        percentile: eff.dataset.percentile
       });
     });
   }

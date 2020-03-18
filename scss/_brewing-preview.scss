@@ -65,9 +65,9 @@ div#brewing-preview-wrapper
           size: 12pt;
         }
         
-        &[data-name][data-magnitude]::after
+        &::after
         {
-          content: "(" attr(data-magnitude) ")";
+          content: "(" attr(data-percentile) " percentile)";
           position: relative;
           font-size: 0.83em;
           vertical-align: super;

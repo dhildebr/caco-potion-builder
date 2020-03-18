@@ -50,6 +50,40 @@ function runIngredientDataBookkeeping(jsonData, debug)
       console.log(`Ingredient effect "${effectName}" is unlisted in effects pool.`);
     });
   }
+  
+  // Build a map of all magnitude values for each effect
+  let effectMagnitudes = new Map();
+  jsonData.effects.forEach(function(eff) {
+    effectMagnitudes.set(eff, []);
+  });
+  
+  jsonData.ingredients.forEach(function(ingr) {
+    ingr.effects.forEach(function(eff) {
+      if(effectMagnitudes.get(eff.name).indexOf(eff.magnitude) < 0)
+        effectMagnitudes.get(eff.name).push(Number(eff.magnitude));
+    });
+  });
+  
+  // Sort the magnitude data
+  effectMagnitudes.forEach(function(effMags, effName) {
+    effMags.sort(function(leftNum, rightNum) {
+      return leftNum - rightNum;
+    });
+  });
+  
+  // Calculate the percentile data for each ingredient's effects
+  jsonData.ingredients.forEach(function(ingr) {
+    ingr.effects.forEach(function(eff) {
+      let indexFromOne = (effectMagnitudes.get(eff.name).indexOf(eff.magnitude) + 1);
+      eff.percentile = Math.trunc((indexFromOne) / effectMagnitudes.get(eff.name).length * 100.0);
+      switch(eff.percentile % 10) {
+        case 1: eff.percentile += "st"; break;
+        case 2: eff.percentile += "nd"; break;
+        case 3: eff.percentile += "rd"; break;
+        default: eff.percentile += "th";
+      }
+    });
+  });
 }
 
 /*
@@ -134,6 +168,7 @@ function populateSearchResults(jsonData, resultsParent, searchbar, effectFilters
         rslt.textContent = ingr.effects[index].name;
         rslt.setAttribute("data-name", ingr.effects[index].name);
         rslt.setAttribute("data-magnitude", ingr.effects[index].magnitude);
+        rslt.setAttribute("data-percentile", ingr.effects[index].percentile);
         resultContainer.appendChild(rslt);
       });
       
