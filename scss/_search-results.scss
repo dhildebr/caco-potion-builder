@@ -41,6 +41,8 @@ div#ingredient-search-results
     border: 1px solid $color-results-border;
     border-radius: 4pt;
     
+    cursor: pointer;
+    
     &:focus,
     &:hover
     {
