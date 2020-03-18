@@ -121,3 +121,53 @@ section
   &:not(:first-of-type) { padding-top: 12pt; }
   &:not(:last-of-type) { padding-bottom: 24pt; }
 }
+
+footer#version-info
+{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-end;
+  justify-content: center;
+  
+  width: 75%;
+  margin-bottom: 5vh;
+  
+  &>span.version-note
+  {
+    font:
+    {
+      family: "Montserrat", sans-serif;
+      weight: 500;
+      size: 10pt;
+    }
+    
+    margin:
+    {
+      top: 3pt;
+      bottom: 0;
+      left: 6pt;
+      right: 6pt;
+    }
+    
+    &>a,
+    &>a:link,
+    &>a:visited
+    {
+      color: $color-main-title;
+      text-decoration: none;
+    }
+    
+    &>a:focus,
+    &>a:hover,
+    &>a:active
+    {
+      text-decoration: underline;
+    }
+  }
+  
+  @include when-under-breakpoint($breakpoint-delta)
+  {
+    width: calc(100% - 24pt);
+  }
+}

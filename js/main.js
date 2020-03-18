@@ -79,6 +79,7 @@ requestJsonData(ingredientDataPath, function(response) {
     dropdown.appendChild(optionsList);
   });
   
+  // Set up the event listener for searching by name
   let searchDelayTimeout = null;
   searchbar.addEventListener("keyup", function(evt) {
     clearTimeout(searchDelayTimeout);
@@ -87,17 +88,30 @@ requestJsonData(ingredientDataPath, function(response) {
     }, 500);
   });
   
+  // Set up the event listeners for filtering by effects
   effectFilters.forEach(function(dropdown) {
     dropdown.addEventListener("change", function(evt) {
       populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters, modsrcToggles);
     });
   });
   
+  // Set up the event listeners for filtering out certain mods' content
   modsrcToggles.forEach(function (toggle) {
     toggle.addEventListener("change", function(evt) {
       populateSearchResults(ingredientData, resultsParent, searchbar, effectFilters, modsrcToggles);
     });
   });
   
+  // Generate an initially empty brewing preview
   generateBrewingPreview([]);
+  
+  // Pull the supported versions of included mods from JSON
+  document.getElementById("ussep-version").querySelector("a").textContent = (
+    `Unofficial Patch v${ingredientData.ussep_version}`);
+  document.getElementById("caco-version").querySelector("a").textContent = (
+    `CACO v${ingredientData.caco_version}`);
+  document.getElementById("bs-bruma-version").querySelector("a").textContent = (
+    `Beyond Skyrim: Cyrodiil v${ingredientData.bs_cyrodiil_version}`);
+  document.getElementById("hunterborn-version").querySelector("a").textContent = (
+    `Hunterborn v${ingredientData.hunterborn_version}`);
 });
