@@ -110,7 +110,7 @@ requestJsonData(ingredientDataPath, function(response) {
     `Unofficial Patch v${ingredientData.ussep_version}`);
   document.getElementById("caco-version").querySelector("a").textContent = (
     `CACO v${ingredientData.caco_version}`);
-  document.getElementById("bs-bruma-version").querySelector("a").textContent = (
+  document.getElementById("bs-cyrodiil-version").querySelector("a").textContent = (
     `Beyond Skyrim: Cyrodiil v${ingredientData.bs_cyrodiil_version}`);
   document.getElementById("hunterborn-version").querySelector("a").textContent = (
     `Hunterborn v${ingredientData.hunterborn_version}`);
