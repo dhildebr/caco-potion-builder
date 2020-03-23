@@ -1,42 +1,45 @@
 :root
 {
-  --color-main-title: #0F260F;
-  --color-background: #52CC52;
-  --color-foreground: #E6CF8A;
-  --color-body-text: #0F260F;
+  --theme-alchemy-background: #52CC52;
+  --theme-alchemy-foreground: #E6CF8A;
+  --theme-alchemy-form-background: #FFF2CC;
+  --theme-alchemy-form-background-focus: #FFF9E6;
+  --theme-alchemy-border: #338033;
+  --theme-alchemy-text: #0F260F;
   
-  --color-brewing-background: #FFF2CC;
-  --color-brewing-background-focus: #FFF9E6;
-  --color-brewing-border: #338033;
-  --color-brewing-text: #0F260F;
+  --theme-cosmogony-background: #1F1F66;
+  --theme-cosmogony-foreground: #0F3299;
+  --theme-cosmogony-form-background: #133EBF;
+  --theme-cosmogony-form-background-focus: #002699;
+  --theme-cosmogony-border: #CCAC33;
+  --theme-cosmogony-text: #F2CF49;
   
-  --color-form-background: #FFF2CC;
-  --color-form-background-focus: #FFF9E6;
-  --color-form-border: #338033;
-  --color-form-text: #0F260F;
+  // #################################################### //
   
-  --color-results-background: #FFF2CC;
-  --color-results-background-focus: #FFF9E6;
-  --color-results-border: #338033;
-  --color-results-text: #0F260F;
+  --color-background: var(--theme-alchemy-background);
+  --color-foreground: var(--theme-alchemy-foreground);
+  --color-form-background: var(--theme-alchemy-form-background);
+  --color-form-background-focus: var(--theme-alchemy-form-background-focus);
+  --color-border: var(--theme-alchemy-border);
+  --color-text: var(--theme-alchemy-text);
 }
 
-$color-main-title: var(--color-main-title);
+$color-main-title: var(--color-text);
 $color-background: var(--color-background);
 $color-foreground: var(--color-foreground);
-$color-body-text: var(--color-body-text);
+$color-body-text: var(--color-text);
 
-$color-brewing-background: var(--color-brewing-background);
-$color-brewing-background-focus: var(--color-brewing-background-focus);
-$color-brewing-border: var(--color-brewing-border);
-$color-brewing-text: var(--color-brewing-text);
+$color-brewing-background: var(--color-form-background);
+$color-brewing-background-focus: var(--color-form-background-focus);
+$color-brewing-border: var(--color-border);
+$color-brewing-text: var(--color-text);
 
 $color-form-background: var(--color-form-background);
 $color-form-background-focus: var(--color-form-background-focus);
-$color-form-border: var(--color-form-border);
-$color-form-text: var(--color-form-text);
+$color-form-border: var(--color-border);
+$color-form-text: var(--color-text);
 
-$color-results-background: var(--color-results-background);
-$color-results-background-focus: var(--color-results-background-focus);
-$color-results-border: var(--color-results-border);
-$color-results-text: var(--color-results-text);
+$color-results-background: var(--color-form-background);
+$color-results-background-focus: var(--color-form-background-focus);
+$color-results-border: var(--color-border);
+$color-results-text: var(--color-text);

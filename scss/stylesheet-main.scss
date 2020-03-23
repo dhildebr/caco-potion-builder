@@ -3,6 +3,7 @@
 @import "breakpoints";
 @import "prefix-mixins";
 
+@import "themes";
 @import "introduction";
 @import "brewing-preview";
 @import "searchbars";
@@ -80,7 +81,7 @@ main
   max-width: $breakpoint-alpha;
   
   background: $color-foreground;
-  border-radius: 12pt;
+  border-radius: 12pt 0 12pt 12pt;
   
   padding:
   {
@@ -154,7 +155,7 @@ footer#version-info
     &>a:link,
     &>a:visited
     {
-      color: $color-main-title;
+      color: $color-body-text;
       text-decoration: none;
     }
     

@@ -1,0 +1,59 @@
+@import "html5";
+@import "colors";
+@import "breakpoints";
+
+ol#themes-list
+{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  align-content: flex-end;
+  justify-content: flex-end;
+  
+  width: 100%;
+  max-width: $breakpoint-alpha;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  
+  &>li.themes-button
+  {
+    display: inline-block;
+    height: 32pt;
+    
+    color: $color-body-text;
+    background: $color-foreground;
+    border: 0;
+    border-radius: 8pt 8pt 0 0;
+    
+    font: 400 16pt "Merienda", serif;
+    line-height: 32pt;
+    
+    cursor: pointer;
+    
+    padding:
+    {
+      top: 4pt;
+      bottom: 4pt;
+      left: 16pt;
+      right: 16pt;
+    }
+    
+    margin:
+    {
+      top: 4pt;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    &:focus,
+    &:hover,
+    &:active
+    {
+      height: 36pt;
+      line-height: 36pt;
+      margin-top: 0;
+    }
+  }
+}
