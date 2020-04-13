@@ -102,6 +102,13 @@ requestJsonData(ingredientDataPath, function(response) {
     });
   });
   
+  // Set up the event listeners for changing the theme
+  document.getElementById("themes-list").childNodes.forEach(function(themeButton) {
+    themeButton.addEventListener("click", function(evt) {
+      changeTheme(themeButton);
+    });
+  });
+  
   // Generate an initially empty brewing preview
   generateBrewingPreview([]);
   
