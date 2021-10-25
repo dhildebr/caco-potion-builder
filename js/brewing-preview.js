@@ -23,42 +23,51 @@ function generateBrewingPreview(ingredients)
   
   // If 2-3 ingredients are chosen, display their common effects
   else {
-    let allEffects = new Map();
-    let bestEffects = new Map();
-    let bestPercentiles = new Map();
+    let firstMagnitudes = new Map();
+    let firstPercentiles = new Map();
+    let bestCommonMagnitudes = new Map();
+    let bestCommonPercentiles = new Map();
     
-    // Build a map of names and magnitudes, writing also into bestEffects on the second and subsequent encounters
+    // Build a map of names and magnitudes, writing also into bestCommonMagnitudes on the second and subsequent encounters
     ingredients.forEach(function(ingr) {
       ingr.effects.forEach(function(eff) {
-        if(!allEffects.has(eff.name))
-          allEffects.set(eff.name, eff.magnitude);
-        else if(!bestEffects.has(ingr.name)) {
-          bestEffects.set(eff.name, eff.magnitude);
-          bestPercentiles.set(eff.name, eff.percentile);
+        if(!firstMagnitudes.has(eff.name)) {
+          firstMagnitudes.set(eff.name, eff.magnitude);
+          firstPercentiles.set(eff.name, eff.percentile);
         }
-        else if(eff.magnitude > bestEffects.get(eff.name).magnitude) {
-          bestEffects.get(eff.name).magnitude = eff.magnitude;
-          bestPercentiles.get(eff.name).percentile = eff.percentile;
+        else if(!bestCommonMagnitudes.has(ingr.name)) {
+          if(eff.magnitude > firstMagnitudes.get(eff.name)) {
+            bestCommonMagnitudes.set(eff.name, eff.magnitude);
+            bestCommonPercentiles.set(eff.name, eff.percentile);
+          }
+          else {
+            bestCommonMagnitudes.set(eff.name, firstMagnitudes.get(eff.name));
+            bestCommonPercentiles.set(eff.name, firstPercentiles.get(eff.name));
+          }
+        }
+        else if(eff.magnitude > bestCommonMagnitudes.get(eff.name).magnitude) {
+          bestCommonMagnitudes.get(eff.name).magnitude = eff.magnitude;
+          bestCommonPercentiles.get(eff.name).percentile = eff.percentile;
         }
       });
     });
     
     // Determine instructions depending on whether matching effects were found
-    brewingInstructionsElem.textContent = (bestEffects.size > 0) ?
+    brewingInstructionsElem.textContent = (bestCommonMagnitudes.size > 0) ?
       "Potion effects:" : "No matching effects" ;
     
     // Build the list of matching effects
-    if(bestEffects.size > 0) {
+    if(bestCommonMagnitudes.size > 0) {
       let brewingEffectsList = document.createElement("ul");
       brewingEffectsList.id = "brewing-preview-potion-effects";
       
-      // Convert bestEffects into an array of key-value objects for sorting
+      // Convert bestCommonMagnitudes into an array of key-value objects for sorting
       let matchingEffects = [];
-      bestEffects.forEach(function(effMag, effName) {
+      bestCommonMagnitudes.forEach(function(effMag, effName) {
         matchingEffects.push({
           name: effName,
           magnitude: effMag,
-          percentile: bestPercentiles.get(effName)
+          percentile: bestCommonPercentiles.get(effName)
         });
       });
       matchingEffects.sort(compareIngredientEffects);

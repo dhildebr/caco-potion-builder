@@ -4,7 +4,7 @@
 
 ol#themes-list
 {
-  display: flex;
+  display: inline-flex;
   flex-flow: row nowrap;
   align-items: flex-start;
   align-content: flex-end;
@@ -13,23 +13,31 @@ ol#themes-list
   width: 100%;
   max-width: $breakpoint-alpha;
   border: 0;
-  margin: 0;
   padding: 0;
+  margin: 0;
   
   &>li.themes-button
   {
     display: inline-block;
-    height: 32pt;
+    height: 24pt;
     
     color: $color-body-text;
     background: $color-foreground;
     border: 0;
     border-radius: 8pt 8pt 0 0;
     
-    font: 400 16pt "Merienda", serif;
-    line-height: 32pt;
+    text-align: center;
+    line-height: 24pt;
     
     cursor: pointer;
+    @include user-select(none);
+    
+    font:
+    {
+      family: "Merienda", sans-serif;
+      weight: 500;
+      size: 12pt;
+    }
     
     padding:
     {
@@ -51,9 +59,39 @@ ol#themes-list
     &:hover,
     &:active
     {
-      height: 36pt;
-      line-height: 36pt;
+      height: 28pt;
+      line-height: 28pt;
       margin-top: 0;
     }
+    
+    @include when-under-breakpoint($breakpoint-echo)
+    {
+      display: inline;
+      background: transparent;
+      padding: 0;
+      
+      margin:
+      {
+        top: 4pt;
+        bottom: 4pt;
+        left: 8pt;
+        right: 8pt;
+      }
+      
+      &:focus,
+      &:hover,
+      &:active
+      {
+        height: auto;
+        line-height: 24pt;
+        margin-top: 4pt;
+      }
+    }
+  }
+  
+  @include when-under-breakpoint($breakpoint-echo)
+  {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
